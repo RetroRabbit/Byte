@@ -4,5 +4,10 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Insert custom made components
+
+import Settings from './components/settings';
+
+ReactDOM.render(< Settings />, document.getElementById('root'));
+
 registerServiceWorker();
