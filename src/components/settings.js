@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 // Setting class having the profile details
 
@@ -11,13 +10,22 @@ class Settings extends Component {
 
             <div>
 
-                <img src={'http://www.the-lizard.org/images/phocagallery/Mammals/Rabbit_320_Natural%20England_Allan%20Drewitt.jpg'} alt="profile picture" className="profileImage" />
+                <br/>
 
-                <h3>Addie Hogan</h3>
+                <img className="profilePictureImg" src={'http://www.the-lizard.org/images/phocagallery/Mammals/Rabbit_320_Natural%20England_Allan%20Drewitt.jpg'} />
 
-                <p>addiehogan@gmail.com</p>
+                <br/>
+                <br/>
 
-                <button>DONE</button>
+                <h2 className="profilePictureDetails">Addie Hogan</h2>
+
+                <br/>
+
+                <h5 className="profilePictureDetails">addiehogan@gmail.com</h5>
+
+                <br/>
+
+                <button className="profilePictureButton">DONE</button>
 
             </div>
 
