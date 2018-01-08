@@ -11,6 +11,9 @@ import RaisedButton from 'material-ui/RaisedButton'
 import Popover from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import TextField from 'material-ui/TextField'
+import FontIcon from 'material-ui/FontIcon';
+import NavigationExpandMoreIcon from 'material-ui/svg-icons/navigation/expand-more';
+import IconMenu from 'material-ui/IconMenu';
 
 const appbarstyle={
   backgroundColor: '#01B9BD',
@@ -22,6 +25,8 @@ const avatarStyle={
   marginTop:'5px',
   borderColor: '#d6d7da',
   borderWidth:'50px',
+  width:'67px',
+  height:'67px',
   color:'#ffffffs'
 };
 
@@ -33,15 +38,12 @@ const avatarStyle={
     marginLeft:'20px',
   };
 
-  const leftButtons=(
-    <div>
-    <FlatButton label="New Chat" style={buttonstyle}/>
-    <FlatButton label="New Group" style={buttonstyle} />
-    </div>
-    );
 
     const profileNameStyle={
       color:'#ffffff',   
+      height:'30px',
+      fontFamily: 'Avenir Next',
+      marginTop:'25px',
       };
       
 class MyHeaderComponent extends React.Component{
@@ -49,15 +51,27 @@ class MyHeaderComponent extends React.Component{
   super(props);
   this.state = {
     open: false,
+    newchatornamehover:'namehover'
+
   };
  }
 
  handleClick = (event) => {
   // This prevents ghost click.
   event.preventDefault();
-
   this.setState({
     open: true,
+    newchatornamehover:'namehover',
+    anchorEl: event.currentTarget,
+  });
+};
+
+handleClick2 = (event) => {
+  // This prevents ghost click.
+  event.preventDefault();
+  this.setState({
+    open: true,
+    newchatornamehover:'newchat',
     anchorEl: event.currentTarget,
   });
 };
@@ -67,8 +81,14 @@ handleRequestClose = () => {
     open: false,
   });
 };
-
 render(){
+
+  const leftButtons=(
+    <div>
+    <FlatButton label="New Chat" onClick={this.handleClick2} style={buttonstyle}/>
+    <FlatButton label="New Group" style={buttonstyle} />
+    </div>
+    );
 
 const rightContent=(
   <div>
@@ -91,8 +111,8 @@ const rightContent=(
   <Avatar  src={avatarLogo}  style={avatarStyle}/>
   </div >
 
-  <div style={{float:'right'}}>
-  <Avatar  src={avatarLogo} onClick={this.handleClick} style={avatarStyle}/>
+  <div  style={{float:'right'}}>
+  <Avatar  src={avatarLogo} onClick={this.handleClick}  onMouseEnter={this.handleClick}   style={avatarStyle}/>
   </div >
 
    
