@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb5ed308-5dc8-444e-a83a-2d8becbc937a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/Css/App.css" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent.js" afterPath="$PROJECT_DIR$/src/Components/ChatComponent.js" />
-      <change beforePath="$PROJECT_DIR$/src/ContentOnSide.css" afterPath="$PROJECT_DIR$/src/Css/ContentOnSide.css" />
-      <change beforePath="$PROJECT_DIR$/src/HeaderComponent.js" afterPath="$PROJECT_DIR$/src/Components/HeaderComponent.js" />
-      <change beforePath="$PROJECT_DIR$/src/SideComponent.js" afterPath="$PROJECT_DIR$/src/Components/SideComponent.js" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/Css/index.css" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" afterPath="$PROJECT_DIR$/src/Images/logo.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -325,7 +316,7 @@
       <option name="presentableId" value="Default" />
       <updated>1515143941017</updated>
       <workItem from="1515143942286" duration="617000" />
-      <workItem from="1515399807445" duration="13016000" />
+      <workItem from="1515399807445" duration="13290000" />
     </task>
     <task id="LOCAL-00001" summary="Added Layout">
       <created>1515402818759</created>
@@ -341,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515410628427</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Corrected structure as team agreed standard going forward.">
+      <created>1515416038110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515416038110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -350,7 +348,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28309000" />
+    <option name="totallyTimeSpent" value="28583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -406,7 +404,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Layout" />
     <MESSAGE value="Added Layout added layout with screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Layout added layout with screens" />
+    <MESSAGE value="Corrected structure as team agreed standard going forward." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected structure as team agreed standard going forward." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -627,7 +626,7 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
