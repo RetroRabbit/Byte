@@ -7,14 +7,11 @@ class ChatComponent extends Component {
 
     render() {
         return (
-            <div className="App">
-                <div className="md-background-secondary">
+            <div className="App" id="main">
 
-                    <h2 className="md-font-semibold">Welcome to Chat</h2>
+                    <h2>Welcome to Chat</h2>
+
                 </div>
-
-
-            </div>
         );
     }
 }
