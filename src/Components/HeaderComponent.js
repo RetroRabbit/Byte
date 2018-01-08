@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import avatarLogo from './images/Icon.png';
+import avatarLogo from '../Images/Icon.png';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import FlatButton from 'material-ui/FlatButton'

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../Images/logo.svg';
+import '../Css/App.css';
 
 class ChatComponent extends Component {
 

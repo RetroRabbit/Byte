@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import './ContentOnSide.css';
+import '../Css/ContentOnSide.css';
 
 const styles = {
     chip: {
@@ -28,7 +28,7 @@ class SideComponent extends Component {
                     <div className="searchBar">
                         <header className="searchChats" >
                             Search Chats
-                            <img className="searchIcon" src={require("./images/search.png")} alt=""/>
+                            <img className="searchIcon" src={require("../Images/search.png")} alt=""/>
                         </header>
                     </div>
                     <div className="mainContatiner">
@@ -36,7 +36,7 @@ class SideComponent extends Component {
                             <Chip
                                 /*onClick={"do something"}*/
                                 style={styles.chip}>
-                                <Avatar src={require("./images/aaa.png")} />
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here !!!!!!!!!!!!
                                 </header>
@@ -55,7 +55,7 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                <Avatar src={require("./images/aaa.png")} />
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>
@@ -73,27 +73,7 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                <Avatar src={require("./images/aaa.png")} />
-                                <header className="lloyd-jimenez">
-                                    name goes here
-                                </header>
-                            </Chip>
-                            <div className="statusM">
-                                status message goes here
-                            </div>
-                        </div>
-
-
-
-                        <div className="divider">
-                        </div>
-
-                        <div className="rectangle-8">
-                            <Chip
-                                /*onClick={"do something"}*/
-                                style={styles.chip}
-                            >
-                                <Avatar src={require("./images/aaa.png")} />
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>
@@ -113,7 +93,7 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                <Avatar src={require("./images/aaa.png")} />
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>
@@ -133,7 +113,27 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                <Avatar src={require("./images/aaa.png")} />
+                                <Avatar src={require("../Images/aaa.png")} />
+                                <header className="lloyd-jimenez">
+                                    name goes here
+                                </header>
+                            </Chip>
+                            <div className="statusM">
+                                status message goes here
+                            </div>
+                        </div>
+
+
+
+                        <div className="divider">
+                        </div>
+
+                        <div className="rectangle-8">
+                            <Chip
+                                /*onClick={"do something"}*/
+                                style={styles.chip}
+                            >
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>

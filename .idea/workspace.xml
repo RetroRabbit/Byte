@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb5ed308-5dc8-444e-a83a-2d8becbc937a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ContentOnSide.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/Css/App.css" />
       <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent.js" afterPath="$PROJECT_DIR$/src/ChatComponent.js" />
-      <change beforePath="$PROJECT_DIR$/src/HeaderComponent.js" afterPath="$PROJECT_DIR$/src/HeaderComponent.js" />
-      <change beforePath="$PROJECT_DIR$/src/LoginComponent.js" afterPath="$PROJECT_DIR$/src/SideComponent.js" />
+      <change beforePath="$PROJECT_DIR$/src/ChatComponent.js" afterPath="$PROJECT_DIR$/src/Components/ChatComponent.js" />
+      <change beforePath="$PROJECT_DIR$/src/ContentOnSide.css" afterPath="$PROJECT_DIR$/src/Css/ContentOnSide.css" />
+      <change beforePath="$PROJECT_DIR$/src/HeaderComponent.js" afterPath="$PROJECT_DIR$/src/Components/HeaderComponent.js" />
+      <change beforePath="$PROJECT_DIR$/src/SideComponent.js" afterPath="$PROJECT_DIR$/src/Components/SideComponent.js" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/Css/index.css" />
       <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" afterPath="$PROJECT_DIR$/src/Images/logo.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="760">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -38,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -51,7 +50,7 @@
         </entry>
       </file>
       <file leaf-file-name="ChatComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ChatComponent.js">
+        <entry file="file://$PROJECT_DIR$/src/Components/ChatComponent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
               <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
@@ -63,20 +62,20 @@
         </entry>
       </file>
       <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
+        <entry file="file://$PROJECT_DIR$/src/Css/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="921">
-              <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            <state relative-caret-position="640">
+              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeaderComponent.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HeaderComponent.js">
+      <file leaf-file-name="HeaderComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/HeaderComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="993">
-              <caret line="105" column="19" lean-forward="true" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+            <state relative-caret-position="753">
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -85,17 +84,19 @@
         </entry>
       </file>
       <file leaf-file-name="SideComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SideComponent.js">
+        <entry file="file://$PROJECT_DIR$/src/Components/SideComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="67" />
-              <folding />
+            <state relative-caret-position="798">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ContentOnSide.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContentOnSide.css">
+        <entry file="file://$PROJECT_DIR$/src/Css/ContentOnSide.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1628">
               <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
@@ -115,7 +116,7 @@
         </entry>
       </file>
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.css">
+        <entry file="file://$PROJECT_DIR$/src/Css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -151,6 +152,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="deanvd &lt;wilkendean@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -170,13 +176,14 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/ContentSideBarComponent" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/LoginComponent.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/ChatComponent.js" />
         <option value="$PROJECT_DIR$/src/SideComponent.js" />
         <option value="$PROJECT_DIR$/src/ContentOnSide.css" />
         <option value="$PROJECT_DIR$/src/HeaderComponent.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Components/SideComponent.js" />
       </list>
     </option>
   </component>
@@ -222,12 +229,25 @@
             <path>
               <item name="Byte" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -247,6 +267,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DWilken\Documents\GitHub\Byte\src\Images" />
+      <recent name="C:\Users\DWilken\Documents\GitHub\Byte\src\Css" />
+      <recent name="C:\Users\DWilken\Documents\GitHub\Byte\src\Components" />
       <recent name="C:\Users\DWilken\Documents\GitHub\Byte\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -302,7 +325,7 @@
       <option name="presentableId" value="Default" />
       <updated>1515143941017</updated>
       <workItem from="1515143942286" duration="617000" />
-      <workItem from="1515399807445" duration="8745000" />
+      <workItem from="1515399807445" duration="13016000" />
     </task>
     <task id="LOCAL-00001" summary="Added Layout">
       <created>1515402818759</created>
@@ -311,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515402818759</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Layout added layout with screens">
+      <created>1515410628427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1515410628427</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -320,7 +350,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24038000" />
+    <option name="totallyTimeSpent" value="28309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -375,7 +405,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Layout" />
+    <MESSAGE value="Added Layout added layout with screens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Layout added layout with screens" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -404,7 +435,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChatComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/ChatComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
@@ -422,7 +453,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
+    <entry file="file://$PROJECT_DIR$/src/Css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -430,7 +461,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logo.svg">
+    <entry file="file://$PROJECT_DIR$/src/Images/logo.svg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -500,7 +531,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StartComponent.js" />
-    <entry file="file://$PROJECT_DIR$/src/logo.svg">
+    <entry file="file://$PROJECT_DIR$/src/Images/logo.svg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -513,28 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
+    <entry file="file://$PROJECT_DIR$/src/Css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -555,17 +568,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChatComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/ChatComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
@@ -575,7 +578,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ContentOnSide.css">
+    <entry file="file://$PROJECT_DIR$/src/Css/ContentOnSide.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1628">
           <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
@@ -583,20 +586,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SideComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/HeaderComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="67" />
+        <state relative-caret-position="753">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Css/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeaderComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/SideComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="993">
-          <caret line="105" column="19" lean-forward="true" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+        <state relative-caret-position="798">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
