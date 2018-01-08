@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {RaisedButton} from 'material-ui';
+import logo from './logo.svg';
+
 import './App.css';
 import HomeComponent from './LoginComponent';
 
 class App extends Component {
+
 
   constructor() 
   {
@@ -31,6 +37,7 @@ class App extends Component {
       case 1:
         return <HomeComponent setScreenFunc={this.setScreen}/>;
     }
+
   }
 }
 
