@@ -5,10 +5,16 @@ import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MyHeaderComponent from './MyHeaderComponent';
 
-const App = () => (
-  <MuiThemeProvider>
-    <MyHeaderComponent />
+class App extends Component{
+render(){
+ return(
+<div className="App">
+<MuiThemeProvider>
+<MyHeaderComponent/>
   </MuiThemeProvider>
-);
+  </div>
+ );
+}
+}
 
 export default App;
