@@ -12,7 +12,7 @@ class Settings extends Component {
 
                 <br/>
 
-                <img className="profilePictureImg" src={'http://www.the-lizard.org/images/phocagallery/Mammals/Rabbit_320_Natural%20England_Allan%20Drewitt.jpg'} />
+                <img className="profilePictureImg" src={require('../rabbit.jpg')} />
 
                 <br/>
                 <br/>
