@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom'
-
-// import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
-
 // COMPONENTS
-
 import Settings from './components/settings';
-
 class App extends Component {
 
     render(){
@@ -29,5 +23,3 @@ ReactDOM.render(
     </BrowserRouter>
 
     , document.getElementById('root'));
-
-//registerServiceWorker();
