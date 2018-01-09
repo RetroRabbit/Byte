@@ -10,19 +10,16 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 class App extends Component {
   render() {
       return <div className="App">
+
 {/* <LoginComponent/> */}
 
         <MuiThemeProvider>
           <HeaderComponent/>
           <ChatComponent/>
           <SideComponent/>
-
-</MuiThemeProvider>
       </div>;
 
   }
 
 }
-
-
 export default App;
