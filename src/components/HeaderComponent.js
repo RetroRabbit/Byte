@@ -3,11 +3,11 @@ import AppBar from 'material-ui/AppBar';
 import avatarLogo from '../Images/logo.svg';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
-import FlatButton from 'material-ui/FlatButton'
+import FlatButton from 'material-ui/FlatButton';
 import Avatar from 'material-ui/Avatar';
-import DropDownMenu from 'material-ui/DropDownMenu';
-import MenuItem from 'material-ui/MenuItem';
-import RaisedButton from 'material-ui/RaisedButton'
+import DropDownMenu from 'material-ui/Menu';
+import MenuItem from 'material-ui/Menu';
+import RaisedButton from 'material-ui/RaisedButton';
 import Popover from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -73,6 +73,7 @@ class HeaderComponent extends React.Component{
     render(){
 
         const rightContent=(
+            <MuiThemeProvider>
             <div>
                 <div  style={{float:'left'}} >
                     <p style={profileNameStyle} onMouseEnter={this.handleClick} onClick={this.handleClick}> Addie Logan  </p>
@@ -99,6 +100,7 @@ class HeaderComponent extends React.Component{
 
 
             </div>
+            </MuiThemeProvider>
         );
 
         return(

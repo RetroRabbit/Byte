@@ -113,7 +113,7 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                {/* <Avatar src={require("../Images/aaa.png")} /> */}
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>
@@ -133,7 +133,7 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                {/* <Avatar src={require("../Images/aaa.png")} /> */}
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>
