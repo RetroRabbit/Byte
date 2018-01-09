@@ -14,7 +14,7 @@ import ActionInfo from 'material-ui/svg-icons/navigation/cancel';
 
 const appbarstyle = {
   backgroundColor: '#01B9BD',
-  height: '103px',
+  height: '100px',
 };
 
 const avatarStyle = {
