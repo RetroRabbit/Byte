@@ -69,7 +69,7 @@ body {
   top:50%;
   height: 6.54%;	
   color: #FFFFFF;	
-  font-family: "Work Sans";	
+  font-family: 'Work Sans', sans-serif;	
   font-size: 16px;	
   padding: 10px 18px;
   overflow-wrap: normal;
@@ -77,7 +77,7 @@ body {
 
 @font-face {
   font-family: Work Sans;
-  src: url('https://fonts.googleapis.com/css?family=Work+Sans');
+  src: url('https://fonts.googleapis.com/css?family=Work+Sans' );
 }
 
 
@@ -97,11 +97,19 @@ body {
 #AddTimeSent{
   position: relative;
   top: 20px;
-  right: -90%;; 
+  right: -90%;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 13px;
+  text-align: left;
+  color: #75BECA;
 }
 
 #AddTimeReceived{
   position: relative;
   top: 20px;
   left: 0%; 
+  font-family: "Avenir Next", sans-serif;
+  font-size: 13px;
+  text-align: left;
+  color: #75BECA;
 }
