@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom'
-// COMPONENTS
-import Settings from './components/settings';
-class App extends Component {
-
-    render(){
-        return(
-            <div> Login Page </div>
-        )
-    }
-
-}
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import Settings from './components/Settings';
 
 ReactDOM.render(
     

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
+
+import '../Css/Chat.css';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
 import TextField from 'material-ui/TextField';
 
-import CSS from './index.css';
 
 
 
@@ -14,6 +16,7 @@ class ChatComponent extends Component {
 
   render() {
     return (
+    <MuiThemeProvider>
       <div className =  "App">
         <div id="Addbutton">
           <FloatingActionButton>
@@ -46,6 +49,7 @@ class ChatComponent extends Component {
 
 
       </div>
+      </MuiThemeProvider>
     );
   }
 }
