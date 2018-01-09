@@ -7,7 +7,6 @@ import MenuItem from 'material-ui/MenuItem';
 import Popover from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import TextField from 'material-ui/TextField';
-import '../Css/Header.css';
 import { List, ListItem } from 'material-ui/List';
 import ActionInfo from 'material-ui/svg-icons/navigation/cancel';
 
