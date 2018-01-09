@@ -52,6 +52,7 @@ class HeaderComponent extends React.Component{
         this.state = {
             open: false,
         };
+        this.store = this.props.store;
     }
 
     handleClick = (event) => {

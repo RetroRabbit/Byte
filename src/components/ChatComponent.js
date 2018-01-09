@@ -12,6 +12,7 @@ import TextField from 'material-ui/TextField';
 class ChatComponent extends Component {
   constructor(props){
     super(props);
+    this.store = this.props.store;
   }
 
   render() {

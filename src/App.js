@@ -33,7 +33,7 @@ class App extends Component {
     return(
         <MuiThemeProvider>
         <div>
-            {/* <SideComponent/> */} 
+            {/* <SideComponent/>  */}
         </div>
         </MuiThemeProvider>
     );

@@ -12,7 +12,7 @@ let store = createStore(myReducers);
 
 function render(){
     ReactDOM.render(
-    <App/>,
+    <App store={store}/>,
     document.getElementById('root')
     );
 }

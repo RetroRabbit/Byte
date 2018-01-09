@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 // Setting class having the profile details
 
 class Settings extends Component {
+    constructor(props){
+        super(props);
+        this.store = this.props.store;
+    }
     render(){
         return (
             <div>

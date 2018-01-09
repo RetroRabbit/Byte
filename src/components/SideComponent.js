@@ -21,6 +21,10 @@ const styles = {
 
 // repeating only to display scrolling
 class SideComponent extends Component {
+    constructor(props){
+        super(props);
+        this.store = this.props.store;
+    }
     render() {
         return (
             <MuiThemeProvider>
