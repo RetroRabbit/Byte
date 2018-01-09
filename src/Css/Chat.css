@@ -6,8 +6,30 @@ body {
 
 .App
 {
-  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background: #424242;
 
+}
+
+.Main{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 80%;
+  background: rgb(255, 255, 255);
+}
+
+.Messages{
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  width: 100%;
+  height: 70%;
+  background: rgb(180, 180, 180);
 }
 
 #Addbutton{
@@ -18,13 +40,13 @@ body {
 }
 
 #AddMessageBox{
-  position: absolute;
-  top: 79%;
-  bottom: 0;
-  left: 10%; 
+  position: relative;
+  top: 85%;
+  left:10%;
+  right: 0%; 
   background-color: lightgray;
   height: 6%;
-  width: 50%;
+  width: 80%;
   text-align: left;
   text-indent: 1%;
   border-radius: 25px;
@@ -32,7 +54,7 @@ body {
 
 #AddConversationMessageBoxSent{
   position: absolute;
-  left: 10%;
+  right: 10%;
   top: 20%;
   width: fit-content;
   height: fit-content;
@@ -44,7 +66,7 @@ body {
 
 #AddConversationMessageBoxReceived{
   position: absolute;
-  right: 40%;
+  left: 10%;
   top: 55%;
   width: fit-content;
   height: fit-content;
@@ -57,11 +79,11 @@ body {
 #AddTimeSent{
   position: relative;
   top: 20px;
-  left: -35%; 
+  right: -75%;; 
 }
 
 #AddTimeReceived{
   position: relative;
   top: 20px;
-  left: -35%; 
+  left: 0%; 
 }

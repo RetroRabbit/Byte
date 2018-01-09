@@ -17,7 +17,7 @@ class ChatComponent extends Component {
   render() {
     return (
     <MuiThemeProvider>
-      <div className =  "App">
+      <div className =  "Main">
         <div id="Addbutton">
           <FloatingActionButton>
             <ContentAdd/>
@@ -25,7 +25,8 @@ class ChatComponent extends Component {
         </div>
         <div id = "AddMessageBox">
           <TextField hintText = "Enter Message Here"/>
-        </div>
+          </div>
+        <div className="Messages">  
         <div id = "AddConversationMessageBoxSent">
           <TextField TextArea={true} rows = {2} disabled value={'To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us'}>
             
@@ -47,7 +48,7 @@ class ChatComponent extends Component {
           </div>
         </div>
 
-
+</div>
       </div>
       </MuiThemeProvider>
     );
