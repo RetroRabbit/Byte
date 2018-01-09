@@ -6,6 +6,8 @@ import '../Css/style.css'
 //import loginJS from './login';
 //import $ from 'jquery';
 
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 class LoginComponent extends Component {
 
    constructor(props) {
@@ -56,11 +58,12 @@ class LoginComponent extends Component {
           <input  className='otherfont'  type="pwd" id="pwd"/>
 <hr/>
             <div className='position'>
-                <button className='button'>Login</button>
+                <button className='button'><Link to="/mainChat">Login </Link></button>
             </div>
 
 
             <div class="inside-the-footer"><button className='regbutton'>No account yet? Get setup now</button></div>
+            <Link to="/registration"> <button className="skip"> No account yet? Get setup now </button> </Link>    
         </form>
 
    </div>
