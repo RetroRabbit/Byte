@@ -8,7 +8,6 @@ import TextField from 'material-ui/TextField';
 
 
 
-
 class ChatComponent extends Component {
   constructor(props){
     super(props);
@@ -28,9 +27,10 @@ class ChatComponent extends Component {
           </div>
         <div className="Messages">  
         <div id = "AddConversationMessageBoxSent">
-          <TextField TextArea={true}   value={'To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us'}>
+              <div className="ChatText" >
+            To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us. It will text wrap. 
             
-          </TextField>
+          </div>
           <div id = "AddTimeSent">
             <label>
               07:48pm
@@ -38,9 +38,11 @@ class ChatComponent extends Component {
           </div>
         </div>
         <div id = "AddConversationMessageBoxReceived">
-          <header className= "ChatText" >
-          This is some text that will be received by the user aaaaaaaaaaaaaaaaaaa
-          </header>
+              <div className="ChatText" >
+                
+          This is some text that will be received by the user. It will text wrap if the text is too long.
+                  
+          </div>
           <div id = "AddTimeReceived">
             <label>
               07:45pm
