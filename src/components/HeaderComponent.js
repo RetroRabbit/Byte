@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import avatarLogo from './Icon.png';
+import avatarLogo from '../Images/Icon.png';
 import FlatButton from 'material-ui/FlatButton'
 import Avatar from 'material-ui/Avatar';
 import MenuItem from 'material-ui/MenuItem';
@@ -37,7 +37,7 @@ const profileNameStyle = {
   marginTop: '25px',
 };
 
-class MyHeaderComponent extends React.Component {
+class HeaderComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -143,4 +143,4 @@ class MyHeaderComponent extends React.Component {
   }
 }
 
-export default MyHeaderComponent;
+export default HeaderComponent;
