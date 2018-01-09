@@ -8,7 +8,6 @@ import TextField from 'material-ui/TextField';
 
 
 
-
 class ChatComponent extends Component {
   constructor(props){
     super(props);
@@ -17,19 +16,19 @@ class ChatComponent extends Component {
   render() {
     return (
     <MuiThemeProvider>
-      <div className =  "App">
+      <div className =  "Main">
         <div id="Addbutton">
           <FloatingActionButton>
             <ContentAdd/>
           </FloatingActionButton>
         </div>
-        <div id = "AddMessageBox">
-          <TextField hintText = "Enter Message Here"/>
-        </div>
+            <input id="AddMessageBox" className="EnterText" type="text" />
+        <div className="Messages">  
         <div id = "AddConversationMessageBoxSent">
-          <TextField TextArea={true} rows = {2} disabled value={'To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us'}>
+              <div className="ChatText" >
+            To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us. It will text wrap. 
             
-          </TextField>
+          </div>
           <div id = "AddTimeSent">
             <label>
               07:48pm
@@ -37,9 +36,11 @@ class ChatComponent extends Component {
           </div>
         </div>
         <div id = "AddConversationMessageBoxReceived">
-          <TextField multiline={true} rows = {2} disabled value={'This is some text that will be received by the user'}>
-            
-          </TextField>
+              <div className="ChatText" >
+                
+          This is some text that will be received by the user. It will text wrap if the text is too long.
+                  
+          </div>
           <div id = "AddTimeReceived">
             <label>
               07:45pm
@@ -47,7 +48,7 @@ class ChatComponent extends Component {
           </div>
         </div>
 
-
+</div>
       </div>
       </MuiThemeProvider>
     );
