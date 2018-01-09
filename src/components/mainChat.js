@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import '../Css/App.css';
+import LoginComponent from "../components/LoginComponent";
+import ChatComponent from "../components/ChatComponent";
+import HeaderComponent from "../components/HeaderComponent";
+import SideComponent from "../components/SideComponent";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import Login from './login';
-import Registration from './registration';
-import RegisterStepOne from './registerstepone';
-import RegisterStepTwo from './registersteptwo';    
-import RegisterStepThree from './registerstepthree';
 
-class MainChat extends Component {
+class App extends Component {
+  render() {
+      return <div className="App">
 
-    render(){
-        return(
-            <div>
-                Main chat 
-            </div>
-        )
-    }
+
+          <MuiThemeProvider>
+          {/* <LoginComponent/>   */}
+          <HeaderComponent/>
+          <ChatComponent/>
+          <SideComponent/>
+
+</MuiThemeProvider>
+      </div>;
+
+  }
 
 }
 
-export default MainChat
+
+export default App;
