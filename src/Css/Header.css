@@ -1,0 +1,14 @@
+#appbarSt{
+background-color: #01B9BD;
+  height: 103px
+}
+
+#avatarSt{
+    margin-left: 10px;
+    margin-top: 5px;
+    border-color: #d6d7da;
+    border-width: 50px;
+    width: 67p;
+    height: 67px;
+    color: #ffffff;
+}

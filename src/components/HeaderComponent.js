@@ -7,6 +7,10 @@ import MenuItem from 'material-ui/MenuItem';
 import Popover from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import TextField from 'material-ui/TextField';
+import  '../Css/Header.css';
+import {List, ListItem} from 'material-ui/List';
+import ActionInfo from 'material-ui/svg-icons/navigation/cancel';
+
 
 const appbarstyle = {
   backgroundColor: '#01B9BD',
@@ -94,11 +98,15 @@ class HeaderComponent extends React.Component {
           canAutoPosition={true}
           onRequestClose={this.handleRequestClose2}
         >
-          <Menu >
-            <MenuItem>
-              <TextField hintText="Friends Email" />
-            </MenuItem>
-          </Menu>
+         
+            <List>
+              <ListItem rightIcon={<ActionInfo/>}>
+              <TextField
+      hintText="Friends Email"
+    />
+                 </ListItem>
+              </List>
+         
         </Popover>
         <FlatButton label="New Group" style={buttonstyle} />
       </div>
@@ -134,11 +142,13 @@ class HeaderComponent extends React.Component {
     );
 
     return (
+      <div>
       <AppBar
         style={appbarstyle}
         iconElementLeft={leftButtons}
         iconElementRight={rightContent}
       />
+      </div>
     );
   }
 }
