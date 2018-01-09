@@ -7,8 +7,8 @@ import MenuItem from 'material-ui/MenuItem';
 import Popover from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import TextField from 'material-ui/TextField';
-import  '../Css/Header.css';
-import {List, ListItem} from 'material-ui/List';
+import '../Css/Header.css';
+import { List, ListItem } from 'material-ui/List';
 import ActionInfo from 'material-ui/svg-icons/navigation/cancel';
 
 
@@ -63,7 +63,7 @@ class HeaderComponent extends React.Component {
     });
   };
 
-  handleClick2 = (event) => {
+  newChatClick = (event) => {
     // This prevents ghost click.
     this.changeColor();
     event.preventDefault();
@@ -78,35 +78,41 @@ class HeaderComponent extends React.Component {
       open: false,
     });
   };
-  handleRequestClose2 = () => {
+  newChatCloseRequest = () => {
     this.changeColor();
     this.setState({
       newchatornamehover: false,
     });
   };
+
   render() {
     //rendering the background color of a new chat button based on hovering action of the user
     var bgColor = this.state.newchat_color ? "#0DABAF" : "#FF5722"
     const leftButtons = (
       <div>
-        <FlatButton label="New Chat" onClick={this.handleClick2} onMouseEnter={this.handleClick2} style={{ backgroundColor: bgColor, color: '#ffffff', height: '54px', width: '143px', marginLeft: '20px', }} />
+        <FlatButton label="New Chat" onClick={this.newChatClick} onMouseEnter={this.newChatClick} style={{ backgroundColor: bgColor, color: '#ffffff', height: '54px', width: '143px', marginLeft: '20px', }} />
         <Popover
           open={this.state.newchatornamehover}
           anchorEl={this.state.anchorEl}
           anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
           targetOrigin={{ horizontal: 'left', vertical: 'top' }}
           canAutoPosition={true}
-          onRequestClose={this.handleRequestClose2}
+          onRequestClose={this.newChatCloseRequest}
         >
-         
-            <List>
-              <ListItem rightIcon={<ActionInfo/>}>
+
+          <List>
+            <ListItem rightIcon={
+              <div onClick={this.newChatCloseRequest}>
+                <ActionInfo />
+              </div>
+            }
+            >
               <TextField
-      hintText="Friends Email"
-    />
-                 </ListItem>
-              </List>
-         
+                hintText="Friends Email"
+              />
+            </ListItem>
+          </List>
+
         </Popover>
         <FlatButton label="New Group" style={buttonstyle} />
       </div>
@@ -136,18 +142,16 @@ class HeaderComponent extends React.Component {
         <div style={{ float: 'right' }}>
           <Avatar src={avatarLogo} onClick={this.handleClick} onMouseEnter={this.handleClick} style={avatarStyle} />
         </div >
-
-
       </div>
     );
 
     return (
       <div>
-      <AppBar
-        style={appbarstyle}
-        iconElementLeft={leftButtons}
-        iconElementRight={rightContent}
-      />
+        <AppBar
+          style={appbarstyle}
+          iconElementLeft={leftButtons}
+          iconElementRight={rightContent}
+        />
       </div>
     );
   }

@@ -12,3 +12,11 @@ background-color: #01B9BD;
     height: 67px;
     color: #ffffff;
 }
+
+.bttnnstyle{
+    color: #ffffff;
+    height: 54px;
+    width: 143px;
+    background-color: #0DABAF;
+    margin-left: 20px;
+  };
