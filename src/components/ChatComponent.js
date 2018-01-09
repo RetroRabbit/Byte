@@ -28,7 +28,7 @@ class ChatComponent extends Component {
           </div>
         <div className="Messages">  
         <div id = "AddConversationMessageBoxSent">
-          <TextField TextArea={true} rows = {2} disabled value={'To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us'}>
+          <TextField TextArea={true}   value={'To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us'}>
             
           </TextField>
           <div id = "AddTimeSent">
@@ -38,9 +38,9 @@ class ChatComponent extends Component {
           </div>
         </div>
         <div id = "AddConversationMessageBoxReceived">
-          <TextField multiline={true} rows = {2} disabled value={'This is some text that will be received by the user'}>
-            
-          </TextField>
+          <header className= "ChatText" >
+          This is some text that will be received by the user aaaaaaaaaaaaaaaaaaa
+          </header>
           <div id = "AddTimeReceived">
             <label>
               07:45pm

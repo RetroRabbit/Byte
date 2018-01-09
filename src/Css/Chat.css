@@ -62,18 +62,33 @@ body {
   background-color: #01b9bd;
   text-decoration-color: black;
   text-align: left;
+  text-overflow: true;
+  overflow-wrap: 100%;
 }
+
+.ChatText{	
+  position: relative;
+  left: 2%;
+  height: 6.54%;	
+  color: #FFFFFF;	
+  font-family: "Work Sans";	
+  font-size: 16px;	
+}
+
+
 
 #AddConversationMessageBoxReceived{
   position: absolute;
   left: 10%;
   top: 55%;
   width: fit-content;
-  height: fit-content;
+  height: fit-content + 10%;
+  max-width: 30%;
   border-radius: 25px;
   background-color: teal;
   text-decoration-color: black;
   text-align: left;
+  overflow-wrap: normal;
 }
 
 #AddTimeSent{
