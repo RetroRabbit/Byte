@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './Images/logo.svg';
 import './Css/App.css';
-import ChatComponent from "./Components/ChatComponent";
-import HeaderComponent from "./Components/HeaderComponent";
-import SideComponent from "./Components/SideComponent";
+import ChatComponent from "./components/ChatComponent";
+import HeaderComponent from "./components/HeaderComponent";
+import SideComponent from "./components/SideComponent";
 
 class App extends Component {
   render() {

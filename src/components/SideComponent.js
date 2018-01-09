@@ -28,7 +28,7 @@ class SideComponent extends Component {
                     <div className="searchBar">
                         <header className="searchChats" >
                             Search Chats
-                            {/* <img className="searchIcon" src={require("../Images/search.png")} alt=""/> */}
+                            <img className="searchIcon" src={require("../Images/search.png")} alt=""/>
                         </header>
                     </div>
                     <div className="mainContatiner">
@@ -36,7 +36,7 @@ class SideComponent extends Component {
                             <Chip
                                 /*onClick={"do something"}*/
                                 style={styles.chip}>
-                                {/* <Avatar src={require("../Images/aaa.png")} /> */}
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here !!!!!!!!!!!!
                                 </header>
@@ -46,7 +46,7 @@ class SideComponent extends Component {
                             </div>
                         </div>
 
-                                {/* <Avatar src={require("../Images/aaa.png")} /> */}
+                                <Avatar src={require("../Images/aaa.png")} />
 
                         <div className="divider">
                         </div>
@@ -73,7 +73,7 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                {/* <Avatar src={require("../Images/aaa.png")} /> */}
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>
@@ -93,7 +93,7 @@ class SideComponent extends Component {
                                 /*onClick={"do something"}*/
                                 style={styles.chip}
                             >
-                                {/* <Avatar src={require("../Images/aaa.png")} /> */}
+                                <Avatar src={require("../Images/aaa.png")} />
                                 <header className="lloyd-jimenez">
                                     name goes here
                                 </header>
