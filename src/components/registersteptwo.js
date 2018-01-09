@@ -5,20 +5,20 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import Registration from './registration';
 import Registerstepone from './registerstepone';
 import Registerstepthree from './registerstepthree';
+import MainChat from './mainChat';
 
 class Registersteptwo extends Component {
 
     constructor(props)
     {
         super(props);
-        console.log(props);
     }
 
     render(){
         return (
             <div className="registrationStepTwo">
 
-                <h3 > Step Two </h3>
+                <h3 className="titleTopp"> Step Two </h3>
                 <h2> PROFILE PICTURE </h2>
 
                 <img className="registrationPictureImg" src={require('../registration.png')} alt="profile picture" />
@@ -46,9 +46,9 @@ class Registersteptwo extends Component {
         //   password : this.refs.password.value,
         // }
 
-        var newData: {
+        //var newData: {
 
-        }
+        //}
     
         // this.props.saveValues(newData)
          this.props.nextStep()

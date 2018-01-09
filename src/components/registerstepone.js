@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import Registration from './registration';
 import Registersteptwo from './registersteptwo';
 import Registerstepthree from './registerstepthree';
+import MainChat from './mainChat';
 
 class Registerstepone extends Component {
 
@@ -18,7 +19,7 @@ class Registerstepone extends Component {
         return (    
             <div className="registrationStepOne">
 
-                <h3 > Step One </h3>
+                <h3 className="titleTopp"> Step One </h3>
                 <h2> THE BASICS </h2>
 
                 <input className="userInput" placeholder="Your name" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>

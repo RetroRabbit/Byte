@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import RegisterStepOne from './registerstepone';
 import RegisterStepTwo from './registersteptwo';    
 import RegisterStepThree from './registerstepthree';
+import MainChat from './mainChat';
 
 var fieldValues = {
     name: null,
@@ -17,10 +18,7 @@ class Registration extends Component {
     {
         super(props);
         this.state = {
-            step: 1,
-            name: null,
-            email: null,
-            password: null
+            step: 1
         }
     }
 
@@ -50,7 +48,9 @@ class Registration extends Component {
                 return <RegisterStepTwo fieldValues={this.fieldValues} nextStep={this.nextStep.bind(this)} saveValues={this.saveValues} name={this.state.name} email={this.state.email} password = {this.state.password}/>
             case 3:
                 return <RegisterStepThree fieldValues={this.fieldValues} nextStep={this.nextStep.bind(this)} saveValues={this.saveValues} name={this.state.name} email={this.state.email} password = {this.state.password}/>
-        }
+            case 4:
+                return <MainChat fieldValues={this.fieldValues}/>
+            }
 
     }
 
