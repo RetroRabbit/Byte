@@ -1,0 +1,124 @@
+form {
+    background:#0DABAF;
+    width: 533px;
+    height: 600px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    font-family: Heleetica;
+    position: center;
+    color: #333;
+    border-radius: 10px;
+    padding-top: 25px;
+  }
+  
+  body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: relative;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+.oval
+{
+  height: 269px;	width: 269px;	background-color: #FFFFFF;	box-shadow: 0 2px 12px 3px rgba(0,0,0,0.14);
+  border-radius: 5cm;
+}
+
+#plusSign
+{
+    height: 70px;	width: 70px;	background-color: #D8D8D8;	
+     border-radius: 5cm; 
+     margin-left: 95px;
+     margin-top: 100px;
+}
+
+#Regisration2
+{
+  
+}
+
+#skipForNow
+{
+  color: #FFFFFF;
+}
+
+#Nextstep
+{
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: inherit;
+  color: #FFFFFF;
+  background-color: #0DABAF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25);
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  font-size: 1.3em;
+  font-family: Heleetica;
+  font-weight: 400;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+#Step2
+{
+color: #FFFFFF;	font-family: Heleetica;	font-size: 30px;	font-weight: 500;	line-height: 41px;	text-align: center; 
+margin-left: 40%;
+
+}
+
+#ProfilePic
+{
+  height: 67px;	width: 424px;	color: #FFFFFF;	font-family: "Avenir Next";	font-size: 36px;	font-weight: 500;	letter-spacing: 2px;	line-height: 49px;	text-align: center;
+  margin-left: 20%;
+}
+
+#skipForNow
+{
+    color: #FFFFFF;
+    margin-left: 222px;
+}
+
+.oval-2
+{
+     	height: 72px;	width: 72px;	background-color: #D8D8D8;
+}
+
+.line-copy 
+{	
+    box-sizing: border-box;	height: 3px;	width: 24px;	border: 3px solid #979797;	transform: rotate(90deg);
+}
+
+.plus 
+{
+        height: 25px;	width: 24px;
+}
+
+form input {
+  
+    width: 78%;
+    margin-left: 20px;
+    color: #0DABAF;
+    padding: 5px 30px;
+    font-size: 1em;
+    font-family: Helvetica;
+    border-radius: 3px;
+    background-color: #0DABAF;
+    border-color: transparent;
+    line-height: 27px;
+    font-size: 20px;
+
+    
+  }
+
+  form hr
+{
+  width: 80%;
+}
