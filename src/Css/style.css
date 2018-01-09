@@ -1,4 +1,3 @@
-
 html, body {
   border: 0;
   padding: 0;
@@ -16,16 +15,12 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.rounded{
-  border-radius: 0 0 12px 12px;
-  background-color: #004853;
-}
+
 form {
   background: white;
   width: 533px;
-  height: 500px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
-
+  height: 600px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
   font-family: lato;
   position: center;
   color: #333;
@@ -33,8 +28,8 @@ form {
 }
 form header {
   background:white;
-  padding: 0px 20px;
-
+  padding: 30px 20px;
+  color: white;
   font-size: 1.2em;
   font-weight: 600;
   border-radius: 10px 10px 0 0;
@@ -72,76 +67,59 @@ form .help {
   font-size: 0.8em;
   color: #777;
 }
-
-.button {
-  margin-left: 0px;
-  height: 50px;
-  width: 173px;
-  color: #FFFFFF;
-  font-family: 'FontAwesome', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 30px;
-  text-align: center;
+form button {
+  position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+  left: 50%;
   transform: translate(-50%, 0);
+  font-family: inherit;
+  color: #FFFFFF;
   background-color: #FB6902;
   outline: none;
   border: none;
+  padding: 5px 15px;
+  font-size: 1.3em;
+  font-family: "Avenir Next";
+  font-weight: 400;
   border-radius: 3px;
   box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
-.position{
-  padding-left: 37%;
-}
-.regbutton {
-  padding-top: 10px;
-  border: none;
-  background: none;
-  color: #FFFFFF;
-  font-family: 'FontAwesome', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  text-align: center;
- }
-.button:hover {
-  background-color: #33cc77;
+form button:hover {
+  background-color: #FB6902;
 }
 
+form button
+{
+  height: 50px;	width: 173px;	color: #FFFFFF;	font-family: "Avenir Next";	font-size: 22px;	font-weight: 500;	line-height: 30px;	text-align: center;
+}
 
 .inside-the-footer
 {
-  height: 50px;
-  width: 533px;
-  border-radius: 0 0 12px 12px;	background-color: #01B9BD;
+  height: 103px;	width: 533px;	border-radius: 0 0 12px 12px;	background-color: #01B9BD;
+  margin-top: 82px;
   text-align: center;
-  font-family: 'FontAwesome', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
+
 }
 
-
+footer a 
+{
+  height: 27px;	width: 286px;	color: #FFFFFF;	font-family: "Avenir Next";	font-size: 20px;	line-height: 90px;	text-align: center; 
+  text-decoration: none;
+}
 
 form img
 {
   height: 62px;
   width: 318px;
-  margin-left: 0px;
+  margin-left: 100px; 
 }
 
 .welcome
 {
-  height: 30px;	width: 173px;	color: #004853;	font-family: 'FontAwesome', sans-serif;	font-size: 22px;	font-weight: 500;	line-height: 30px;	text-align: center;
-}
-.otherfont{
-  color: #004853;	font-family: 'FontAwesome', sans-serif;	font-size: 22px;	font-weight: 500;	line-height: 30px;	text-align: center;
-
-
+  height: 30px;	width: 173px;	color: #004853;	font-family: "Avenir Next";	font-size: 22px;	font-weight: 500;	line-height: 30px;	text-align: center;
 }
 
 form hr
