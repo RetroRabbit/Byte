@@ -1,0 +1,22 @@
+
+/* Style settings */
+
+.profilePictureImg {
+    border-radius: 50%;
+    margin-left: 520px;
+    border: 5px solid orange;
+}
+
+.profilePictureDetails{
+    margin-left: 600px;
+}
+
+.profilePictureButton{
+    margin-left: 600px;
+    text-justify: center;
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    border: 0px;
+    border-radius: 6px;
+}

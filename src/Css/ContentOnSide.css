@@ -1,0 +1,107 @@
+.searchBar{
+    position: absolute;
+    top:120px;
+    left:20px;
+    height: 43px;
+    width: 345px;
+    border: 1px solid #979797;
+    border-radius: 21.5px;
+}
+
+
+.searchContainer{
+    height: 200px;
+    width: 411px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 12px 3px rgba(0,0,0,0.14);
+}
+
+/*side panel*/
+.mainContatiner {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    bottom: 0px;
+    width: 411px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 12px 3px rgba(0,0,0,0.14);
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mainContatiner::-webkit-scrollbar{
+    display: none;
+}
+
+/*divider*/
+.divider {
+    box-sizing: border-box;
+    height: 3px;
+    width: 413px;
+    border: 1px solid #EAEAEA;
+}
+
+/*chat search result block*/
+.rectangle-8 {
+    height: 139px;
+    width: 410px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Person box*/
+.rectangle-5 {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    height: 43px;
+    width: 345px;
+    border-radius: 21.5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.rectangle-8:hover{
+    background-color: #F5F5F5;
+}
+
+
+/*Person name*/
+.lloyd-jimenez {
+    height: 2.25%;
+    width: 7.71%;
+    color: #706F6F;
+    font-family: "Avenir Next";
+    font-size: 17px;
+    line-height: 23px;
+}
+
+/*Person pic*/
+.searchIcon {
+    position: absolute;
+    top:0px;
+    left:280px;
+    height: 30px;
+    width: 30px;
+}
+
+.statusM {
+    height: 43px;
+    width: 348px;
+    position: relative;
+    top: 20px;
+    color: #706F6F;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 20px;
+}
+
+.searchChats {
+    position: absolute;
+    top:8px;
+    left: 0px;
+    height: 2.25%;
+    width: 100%;
+    color: #706F6F;
+    font-family: "Avenir Next";
+    font-size: 17px;
+    line-height: 23px;}
