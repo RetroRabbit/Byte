@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom'
-// COMPONENTS
-import Settings from './components/settings';
+
+import Settings from './components/Settings';
 import Registration from './components/registration';
 import Registerstepone from './components/registerstepone';
 import Registersteptwo from './components/registersteptwo';
@@ -10,15 +10,8 @@ import Registerstepthree from './components/registerstepthree';
 import Login from './components/login';
 import MainChat from './components/mainChat';
 
-class App extends Component {
+import registerServiceWorker from './registerServiceWorker';
 
-    render(){
-        return(
-            <div> Login Page </div>
-        )
-    }
-
-}
 
 ReactDOM.render(
     
@@ -35,3 +28,4 @@ ReactDOM.render(
     </BrowserRouter>
 
     , document.getElementById('root'));
+registerServiceWorker();
