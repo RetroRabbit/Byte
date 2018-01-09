@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
 // Setting class having the profile details
-
+// Image has been imported
 class Settings extends Component {
     render(){
         return (

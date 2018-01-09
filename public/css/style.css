@@ -20,3 +20,147 @@
     border: 0px;
     border-radius: 6px;
 }
+
+.registrationStepOne {
+    background-color: #01B9BD;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 15%;
+    padding-top: 1%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    color: white;
+}
+
+body{
+    background-color: #004853;
+}
+
+.registrationButtonStepOne{
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #0DABAF;
+    border-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    border: none;
+    width: 300px;
+    margin-left: -20%;
+}
+
+.userInput{
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    background-color: #01B9BD;
+    color: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    opacity: 1; /* Firefox */
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+
+.registrationStepTwo{
+    background-color: #01B9BD;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 15%;
+    padding-top: 1%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    color: white;
+}
+
+.registrationButtonStepTwo{
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #0DABAF;
+    border-style: none;
+    color: white;
+}
+
+.registrationPictureImg{
+    border-radius: 50%;
+    margin-left: -20px;
+    width: 200px;
+    height: 200px;
+}
+
+.skin{
+    margin-left: 40px;
+}
+
+.registrationStepThree{
+    background-color: #01B9BD;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 15%;
+    padding-top: 1%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    color: white;
+}
+
+.login{
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 15%;
+    padding-top: 1%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    color: white;
+}
+
+.loginButton{
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: orange;
+    border-style: none;
+    color: white;
+}
+
+.titleTop{
+    margin-left: 6%;
+    color:  #01B9BD;
+}
+
+.titleTopp{
+    margin-left: 6%;
+    color:  white;
+}
+
+.titleBottom{
+    color:  #01B9BD;
+}
+
+.userInputLogin{
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: grey;
+    background-color: white ;
+    color: grey !important;
+}

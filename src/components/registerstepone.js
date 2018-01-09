@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import Registration from './registration';
 import Registersteptwo from './registersteptwo';
 import Registerstepthree from './registerstepthree';
-import MainChat from '../App';
+import MainChat from './mainChat';
 
 class Registerstepone extends Component {
 
