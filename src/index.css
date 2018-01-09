@@ -3,3 +3,68 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+<<<<<<< Updated upstream
+=======
+
+.App
+{
+  background: #ffffff;
+
+}
+
+#Addbutton{
+  position: absolute;
+  top: 70%;
+  bottom: 0;
+  left: 10%;  
+}
+
+#AddMessageBox{
+  position: absolute;
+  top: 79%;
+  bottom: 0;
+  left: 10%; 
+  background-color: lightgray;
+  height: 6%;
+  width: 50%;
+  text-align: left;
+  text-indent: 1%;
+  border-radius: 25px;
+}
+
+#AddConversationMessageBoxSent{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  background-color: #01b9bd;
+  text-decoration-color: black;
+  text-align: left;
+}
+
+#AddConversationMessageBoxReceived{
+  position: absolute;
+  right: 40%;
+  top: 55%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  background-color: teal;
+  text-decoration-color: black;
+  text-align: left;
+}
+
+#AddTimeSent{
+  position: relative;
+  top: 20px;
+  left: -35%; 
+}
+
+#AddTimeReceived{
+  position: relative;
+  top: 20px;
+  left: -35%; 
+}
+>>>>>>> Stashed changes
