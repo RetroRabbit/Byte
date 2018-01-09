@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
-import '../Css/style.sass';
+
 import '../Css/App.css';
-import '../Css/style.css';
+import '../Css/style.css'
 //import loginJS from './login';
 //import $ from 'jquery';
 
@@ -34,31 +34,36 @@ class LoginComponent extends Component {
    render() {
     return (
        
-   
+   <div className="rounded">
+
+
+
+
+
         <form>
-                 <loginJS/>
-         <header>
-             <label class="welcome">Welcome to the</label>
+          <loginJS/>
+         <header >
+             <label className='welcome'>Welcome to the</label>
              <br/>
-             <br/>
-             <img src={require("../Images/Full_Logo.png")}/>
+             <img className='-align-center' src={require("../Images/Full_Logo.png")}/>
         </header>
-           <label htmlFor="username">Username</label>
-          <input type="text" id="username" />
+
+           <label className='otherfont' htmlFor="username">Username</label>
+          <input className='otherfont'  type="text" id="username" />
           <hr/>
-        <br/>
-        <br/>
-          <label htmlFor="pwd">Password </label>
-          <input type="pwd" id="pwd"/>
-          <hr/>
-          <br/>
-          <br/>
-         <button>Login</button>
-         <footer>
-                <div class="inside-the-footer"><a href="">No account yet? Get setup now <span>&#8744;</span></a></div>
-             </footer> 
+
+          <label  className='otherfont' htmlFor="pwd">Password </label>
+          <input  className='otherfont'  type="pwd" id="pwd"/>
+<hr/>
+            <div className='position'>
+                <button className='button'>Login</button>
+            </div>
+
+
+            <div class="inside-the-footer"><button className='regbutton'>No account yet? Get setup now</button></div>
         </form>
 
+   </div>
          );
    }
 }
