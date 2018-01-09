@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb5ed308-5dc8-444e-a83a-2d8becbc937a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Css/ChatCSS.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/Css/App.css" afterPath="$PROJECT_DIR$/src/Css/App.css" />
-      <change beforePath="$PROJECT_DIR$/src/Css/style.css" afterPath="$PROJECT_DIR$/src/Css/style.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderComponent.js" afterPath="$PROJECT_DIR$/src/components/HeaderComponent.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginComponent.js" afterPath="$PROJECT_DIR$/src/components/LoginComponent.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -279,7 +273,7 @@
       <updated>1515143941017</updated>
       <workItem from="1515143942286" duration="617000" />
       <workItem from="1515488890462" duration="4450000" />
-      <workItem from="1515494782226" duration="6340000" />
+      <workItem from="1515494782226" duration="6441000" />
     </task>
     <task id="LOCAL-00001" summary="Added Login to Merge to Dev Branch">
       <created>1515492223920</created>
@@ -288,11 +282,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515492223920</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Login page corrected">
+      <created>1515501174151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1515501174151</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11407000" />
+    <option name="totallyTimeSpent" value="11508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -326,7 +327,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Login to Merge to Dev Branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Login to Merge to Dev Branch" />
+    <MESSAGE value="Login page corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login page corrected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
