@@ -22,9 +22,7 @@ class ChatComponent extends Component {
             <ContentAdd/>
           </FloatingActionButton>
         </div>
-        <div id = "AddMessageBox">
-          <TextField hintText = "Enter Message Here"/>
-          </div>
+            <input id="AddMessageBox" className="EnterText" type="text" />
         <div className="Messages">  
         <div id = "AddConversationMessageBoxSent">
               <div className="ChatText" >
