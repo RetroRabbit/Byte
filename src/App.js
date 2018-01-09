@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
+import './Css/App.css';
+import LoginComponent from "./components/LoginComponent";
+import ChatComponent from "./components/ChatComponent";
+import HeaderComponent from "./components/HeaderComponent";
+import SideComponent from "./components/SideComponent";
 
-import ReactDOM from 'react-dom';
-import './App.css';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import HeaderComponent from './components/HeaderComponent';
-import SideComponent from './components/SideComponent';
-import ChatComponent from './components/ChatComponent';
-import LoginComponent from './components/LoginComponent';
-
-import logo from './Images/logo.svg';
-
-class App extends Component{
-render(){
- return(
-<div className="App">
-<MuiThemeProvider>
+class App extends Component {
+  render() {
+      return <div className="App">
 <LoginComponent/>
-  </MuiThemeProvider>
-  </div>
- );
-}}
+
+
+
+
+      </div>;
+
+  }
+
+}
 
 export default App;
