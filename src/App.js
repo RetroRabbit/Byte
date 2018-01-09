@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import ReactDOM from 'react-dom';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -16,7 +15,6 @@ render(){
   </div>
  );
 }
-=======
 import logo from './Images/logo.svg';
 import './Css/App.css';
 import ChatComponent from "./components/ChatComponent";
@@ -34,7 +32,6 @@ class App extends Component {
       </div>;
   }
 
->>>>>>> 505b8b75fc472677fceee691200a0dc8a11b99a2
 }
 
 export default App;
