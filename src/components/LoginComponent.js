@@ -61,4 +61,10 @@ class LoginComponent extends Component {
    }
 }
 
+mapStateToProps(reducername) {
+    username: reducername.username
+}
+
+mapDispatchToProps
+setName
 export default LoginComponent;

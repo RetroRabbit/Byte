@@ -16,8 +16,12 @@ export const RegToThirdReg = () => {
     }
 }
 
-export const LoginToHome = () => {
+export const LoginToHome = (username, password) => {
     return{
-        type: 'GO_TO_HOME'
+        type: 'GO_TO_HOME',
+        payload: {
+            username,
+            password
+        }
     }
 }
