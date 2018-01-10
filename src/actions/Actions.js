@@ -4,12 +4,13 @@ export const LoginToReg = () => {
     }
  }
  
- export const LoginToHome = (username, password) => {
+ export const LoginToHome = (username, password,email) => {
     return{
         type: 'LOGIN_TO_HOME',
         payload: {
             username,
-            password
+            password,
+            email
         }
     }
  }

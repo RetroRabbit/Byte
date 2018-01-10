@@ -11,7 +11,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { BrowserRouter, Route, Link } from "react-router-dom"
 import { LoginToHome } from '../actions/Actions'
-import { setName,setPassword } from '../reducers/Reducers'
+import { setValues } from '../reducers/Reducers'
 
 
 class LoginComponent extends Component {
@@ -29,22 +29,25 @@ class LoginComponent extends Component {
       this.submit = this.submit.bind(this);  
   }
 
-  onChangeInput(event) {
-      this.setState({ value: event.target.value });
-      
-  }
+    onChangeInput(event) {
+        event.preventDefault();        
+        this.setState({ value: event.target.value });
+    }
+  
+    
 
   onSubmitForm(event) {
       event.preventDefault();
-      this.setState({submittedValue: this.state.value});
+      this.setState({submittedValue: event.target.value});
+      
       //this.props.setScreenFunc(2, this.state.value);
       //console.log(event.target.value);
 
   }
   
   submit() {
-      this.props.setName(this.state.value);
-      console.log(this.props);
+      console.log(this.state.value, this.state.submittedValue);
+      this.props.setValues(this.state.value, this.state.submittedValue);
   }  
 
   render() {
@@ -63,7 +66,7 @@ class LoginComponent extends Component {
          <input  className='otherfont' placeholder="Password" type="pwd" id="pwd" onChange={this.onSubmitForm}/>
          <br/><br/><br/>
            <div className='position'>
-                   <button className='button' onClick={this.submit}><Link to="/mainChat">Login </Link></button>
+                   <div className='button' onClick={this.submit}><Link to="/mainChat">Login </Link></div>
            </div>
 
 
@@ -80,9 +83,8 @@ const mapStateToProps = (state) => ({
    password: state.password
 })
 
-const mapDispatchToProps =  dispatch => bindActionCreators ({
-    setName,
-    setPassword
+const mapDispatchToProps = dispatch => bindActionCreators({
+    setValues
 },dispatch)
 
 export default connect(
