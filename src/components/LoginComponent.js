@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 
 import '../Css/App.css'
 import '../Css/style.css'
+
 //import loginJS from './login';
 //import $ from 'jquery';
 
@@ -41,6 +42,7 @@ class LoginComponent extends Component {
    render() {
     return (
        
+
    <div className="rounded">
         <form>
          <header >
@@ -59,9 +61,9 @@ class LoginComponent extends Component {
 
 
             <div class="inside-the-footer"><button className='regbutton'> <Link to="/registration">No account yet? Get setup now</Link></button></div>  
+
         </form>
 
-   </div>
          );
    }
 }

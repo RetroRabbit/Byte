@@ -40,11 +40,10 @@ class App extends Component {
           <SideComponent/>
 
           </MuiThemeProvider>
+
       </div>;
 
   }
 
 }
-
-
 export default App;
