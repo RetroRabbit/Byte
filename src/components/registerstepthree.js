@@ -19,9 +19,9 @@ class Registerstepthree extends Component {
             <div className="registrationStepThree">
 
                 <h3 className="titleTopp"> Last Step </h3>
-                <h2> YOUR FIRST CHAT </h2>
+                <h2 className="titleBottom"> YOUR FIRST CHAT </h2>
                 <br/><br/><br/><br/>
-                <input className="userInput" placeholder="Your name" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>
+                <input className="userInput" placeholder="Friends Email" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>
                 <br/><br/><br/><br/>
 
                     <div>

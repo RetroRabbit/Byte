@@ -62,8 +62,7 @@ class LoginComponent extends Component {
             </div>
 
 
-            <div class="inside-the-footer"><button className='regbutton'>No account yet? Get setup now</button></div>
-            <Link to="/registration"> <button className="skip"> No account yet? Get setup now </button> </Link>    
+            <div class="inside-the-footer"><button className='regbutton'> <Link to="/registration">No account yet? Get setup now</Link></button></div>  
         </form>
 
    </div>
