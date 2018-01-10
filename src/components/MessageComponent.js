@@ -6,6 +6,8 @@ class Message extends React.Component {
     const fromMe = this.props.fromMe ? 'from-me' : '';
 
     return (
+//Need to change to current template
+
       <div className={`message ${fromMe}`}>
         <div className='username'>
           { this.props.username }

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Css/Chat.css';
 
 class ChatInput extends React.Component {
   constructor(props) {
@@ -31,6 +32,8 @@ class ChatInput extends React.Component {
         <input type="text"
           onChange={this.textChangeHandler}
           value={this.state.chatInput}
+          className="EnterText"
+          id="AddMessageBox"
           placeholder="Write a message..."
           required />
       </form>
