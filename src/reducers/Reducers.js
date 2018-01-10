@@ -6,8 +6,12 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type){
-        case 'GO_TO_REG':
-            console.log("Clicked to go to registration page");
+        case 'GO_TO_HOME':
+            return {
+                ...state,
+                userName: action.payload.username,
+                userEmail: action.payload.password
+            }
 
         case 'GO_TO__SECOND_REG':
             console.log("Clicked to go to second registration page");
