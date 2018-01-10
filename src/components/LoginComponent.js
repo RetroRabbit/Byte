@@ -1,13 +1,18 @@
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import '../Css/App.css';
+import '../Css/App.css'
 import '../Css/style.css'
 //import loginJS from './login';
 //import $ from 'jquery';
 
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import ReactDOM from 'react-dom'
+import { push } from 'react-router-redux'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { BrowserRouter, Route, Link } from "react-router-dom"
+
+
 class LoginComponent extends Component {
 
    constructor(props) {
@@ -17,7 +22,7 @@ class LoginComponent extends Component {
            value: '',
            submittedValue: ''
        }
-
+       console.log(this.props);
        this.onChangeInput = this.onChangeInput.bind(this);
        this.onSubmitForm = this.onSubmitForm.bind(this);
    }
@@ -61,10 +66,12 @@ class LoginComponent extends Component {
    }
 }
 
-mapStateToProps(reducername) {
-    username: reducername.username
-}
+const mapStateToProps = (state) => ({
+    username: state.userName,
+    password: state.password
+})
 
-mapDispatchToProps
-setName
-export default LoginComponent;
+export default connect(
+    mapStateToProps,
+    null
+)(LoginComponent)

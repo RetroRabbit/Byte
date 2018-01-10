@@ -13,32 +13,23 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore} from 'redux';
 import myReducers from './reducers/Reducers';
 import App from './App';
-let store = createStore(myReducers);
+import Provider from 'react-redux/lib/components/Provider';
+import store from './Store';
+import {render} from 'react-dom';
 
-function render(){
-    ReactDOM.render(
-    <App store={store}/>,
-    document.getElementById('root')
-    );
-}
-
-store.subscribe(render);
-
-render();
-
-ReactDOM.render(
-    
-    <BrowserRouter>
-        <div>
-            <Route exact path="/" component={Login}>Login</Route>
-            <Route path="/settings" component={Settings}></Route>
-            <Route path="/registration" component={Registration}></Route>
-            <Route path="/stepone" component={Registerstepone}></Route>
-            <Route path="/steptwo" component={Registersteptwo}></Route>
-            <Route path="/stepthree" component={Registerstepthree}></Route>
-            <Route path="/mainChat" component={MainChat}></Route>
-        </div>
-    </BrowserRouter>
-
+render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <div>
+                <Route exact path="/" component={Login}>Login</Route>
+                <Route path="/settings" component={Settings}></Route>
+                <Route path="/registration" component={Registration}></Route>
+                <Route path="/stepone" component={Registerstepone}></Route>
+                <Route path="/steptwo" component={Registersteptwo}></Route>
+                <Route path="/stepthree" component={Registerstepthree}></Route>
+                <Route path="/mainChat" component={MainChat}></Route>
+            </div>
+        </BrowserRouter>
+    </Provider>
     , document.getElementById('root'));
 registerServiceWorker();
