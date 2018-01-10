@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Css/Chat.css';
 
 class Message extends React.Component {
   render() {
@@ -8,14 +9,16 @@ class Message extends React.Component {
     return (
 //Need to change to current template
 
+<div id = "AddConversationMessageBoxSent">
       <div className={`message ${fromMe}`}>
         <div className='username'>
           { this.props.username }
         </div>
-        <div className='message-body'>
+        <div className='ChatText'>
           { this.props.message }
         </div>
       </div>
+  </div>
     );
   }
 }

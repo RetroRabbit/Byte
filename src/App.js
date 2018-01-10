@@ -1,29 +1,41 @@
-import React, { Component } from 'react';
-import './Css/App.css';
-import LoginComponent from "./components/LoginComponent";
-import ChatComponent from "./components/ChatComponent";
-import HeaderComponent from "./components/HeaderComponent";
-import SideComponent from "./components/SideComponent";
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import React from 'react';
+import ChatApp from './ChatApp';
 
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { username: '' };
 
-class App extends Component {
+    // Bind 'this' to event handlers. React ES6 does not do this by default
+    this.usernameChangeHandler = this.usernameChangeHandler.bind(this);
+    this.usernameSubmitHandler = this.usernameSubmitHandler.bind(this);
+  }
+
+  usernameChangeHandler(event) {
+    this.setState({ username: event.target.value });
+  }
+
+  usernameSubmitHandler(event) {
+    event.preventDefault();
+    this.setState({ submitted: true, username: this.state.username });
+  }
+
   render() {
-      return <div className="App">
+    if (this.state.submitted) {
+      // Form was submitted, now show the main App
+      return (
+        <ChatApp username={this.state.username} />
+      );
+    }
 
-
-          <MuiThemeProvider>
-          {/* <LoginComponent/>   */}
-          <HeaderComponent/>
-          <ChatComponent/>
-          <SideComponent/>
-
-          </MuiThemeProvider>
-      </div>;
-
+    // Initial page load, show a simple login form
+    return (
+      <div>"Hello"</div>
+    );
   }
 
 }
-
+App.defaultProps = {
+};
 
 export default App;

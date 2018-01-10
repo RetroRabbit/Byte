@@ -6,53 +6,69 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import TextField from 'material-ui/TextField';
 
+import io from 'socket.io-client';
 
+import ChatInput from './ChatInputComponent';
+import ChatMessage from './MessageComponent';
+import Messages from './MessagesComponent';
 
-class ChatComponent extends Component {
-  constructor(props){
+class ChatComponents extends React.Component {
+  socket = {};
+  constructor(props) {
     super(props);
+    this.state = { messages: [] };
+    this.sendHandler = this.sendHandler.bind(this);
+    
+    // Connect to the server
+    this.socket = io("http://localhost", { query: `username=${props.username}` }).connect();
+
+    // Listen for messages from the server
+    this.socket.on('server:message', message => {
+      this.addMessage(message);
+    });
+  }
+
+  sendHandler(message) {
+    const messageObject = {
+      username: this.props.username,
+      message
+    };
+
+    // Emit the message to the server
+    this.socket.emit('client:message', messageObject);
+
+    messageObject.fromMe = true;
+    this.addMessage(messageObject);
+  }
+
+  addMessage(message) {
+    // Append the message to the component state
+    const messages = this.state.messages;
+    messages.push(message);
+    this.setState({ messages });
   }
 
   render() {
     return (
-    <MuiThemeProvider>
-      <div className =  "Main">
-        <div id="Addbutton">
-          <FloatingActionButton>
+      <MuiThemeProvider>
+      <div className="Main">
+      <Messages messages={this.state.messages} className="AddMessageBox"/>
+      <div id="Addbutton">
+      <FloatingActionButton >
             <ContentAdd/>
           </FloatingActionButton>
         </div>
-            <input id="AddMessageBox" className="EnterText" type="text" />
-        <div className="Messages">  
-        <div id = "AddConversationMessageBoxSent">
-              <div className="ChatText" >
-            To send messages is to make them appear here as this looks. It is important that they are displayed here so we can see what the other person has sent to us. It will text wrap. 
-            
-          </div>
-          <div id = "AddTimeSent">
-            <label>
-              07:48pm
-            </label>
-          </div>
-        </div>
-        <div id = "AddConversationMessageBoxReceived">
-              <div className="ChatText" >
-                
-          This is some text that will be received by the user. It will text wrap if the text is too long.
-                  
-          </div>
-          <div id = "AddTimeReceived">
-            <label>
-              07:45pm
-            </label>
-          </div>
-        </div>
-
-</div>
+        <ChatInput onSend={this.sendHandler}
+        id="AddMessageBox" 
+        className="EnterText" />
       </div>
       </MuiThemeProvider>
     );
   }
-}
 
-export default ChatComponent;
+}
+ChatComponents.defaultProps = {
+  username: 'Anonymous'
+};
+
+export default ChatComponents;

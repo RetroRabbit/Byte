@@ -13,7 +13,7 @@ class App extends Component {
 
 
           <MuiThemeProvider>
-          {/* <LoginComponent/>   */}
+         {/*<LoginComponent/>*/}   
           <HeaderComponent/>
           <ChatComponent/>
           <SideComponent/>

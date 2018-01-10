@@ -1,6 +1,8 @@
 import React from 'react';
 
-import Message from './Message';
+import Message from './MessageComponent';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 
 class Messages extends React.Component {
   componentDidUpdate() {
@@ -13,20 +15,24 @@ class Messages extends React.Component {
     // Loop through all the messages in the state and create a Message component
     const messages = this.props.messages.map((message, i) => {
         return (
-
-            //Need to change to current template
+          <MuiThemeProvider>
           <Message
             key={i}
             username={message.username}
             message={message.message}
             fromMe={message.fromMe} />
+             </MuiThemeProvider>
         );
       });
 
     return (
-      <div className='messages' id='messageList'>
+      <MuiThemeProvider>
+        <div className="AddConversationMessageBoxSent">
+      <div className='AddMessageBox' id='messageList'>
         { messages }
       </div>
+      </div>
+      </MuiThemeProvider>
     );
   }
 }
