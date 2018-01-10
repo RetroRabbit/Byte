@@ -4,9 +4,14 @@ import ChatComponent from "../components/ChatComponent";
 import HeaderComponent from "../components/HeaderComponent";
 import SideComponent from "../components/SideComponent";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { connect } from 'react-redux'
 
 
 class MainChat extends Component {
+    constructor(props) {
+        super(props)
+        console.log(props);
+    }
   render() {
       return <div className="App">
 
@@ -24,5 +29,13 @@ class MainChat extends Component {
 
 }
 
+const mapStateToProps = ({login}) => ({
+    username: login.userName,
+    password: login.password
+ })
 
-export default MainChat;
+ 
+ export default connect(
+    mapStateToProps,
+    null
+ )(MainChat)

@@ -10,7 +10,7 @@ import TextField from 'material-ui/TextField';
 import '../Css/Header.css';
 import { List, ListItem } from 'material-ui/List';
 import ActionInfo from 'material-ui/svg-icons/navigation/cancel';
-
+import { connect } from 'react-redux'
 
 const appbarstyle = {
   backgroundColor: '#01B9BD',
@@ -49,6 +49,7 @@ class HeaderComponent extends React.Component {
       newchatornamehover: false,
       newchat_color: true,
     };
+    console.log(props);
   }
   changeColor() {
     this.setState({ newchat_color: !this.state.newchat_color })
@@ -121,7 +122,7 @@ class HeaderComponent extends React.Component {
     const rightContent = (
       <div>
         <div style={{ float: 'left' }} >
-          <p style={profileNameStyle} onMouseEnter={this.handleClick} onClick={this.handleClick}> Addie Logan  </p>
+          <p style={profileNameStyle} onMouseEnter={this.handleClick} onClick={this.handleClick}> {this.props.username} </p>
           <Popover
             open={this.state.open}
             anchorEl={this.state.anchorEl}
@@ -157,4 +158,13 @@ class HeaderComponent extends React.Component {
   }
 }
 
-export default HeaderComponent;
+const mapStateToProps = ({login}) => ({
+    username: login.userName,
+    password: login.password
+ })
+
+ 
+ export default connect(
+    mapStateToProps,
+    null
+ )(HeaderComponent)

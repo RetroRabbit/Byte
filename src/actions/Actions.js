@@ -13,3 +13,14 @@ export const LoginToReg = () => {
         }
     }
  }
+
+ export const RegisterThis = (username, password, email) => {
+    return{
+        type: 'SET_EMAIL',
+        payload: {
+            username,
+            password,
+            email
+        }
+    }
+ }
