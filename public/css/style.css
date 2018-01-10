@@ -22,15 +22,13 @@
 }
 
 .registrationStepOne {
+    position: absolute;
+    left: 33%;
+    top: 10%;
+    height: 80%;
+    width: 33%;
+    border-radius: 12px;
     background-color: #01B9BD;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-left: 15%;
-    padding-top: 1%;
-    margin-top: 5%;
-    padding-bottom: 5%;
-    border-radius: 10px;
-    color: white;
 }
 
 body{
@@ -38,17 +36,21 @@ body{
 }
 
 .registrationButtonStepOne{
+    position: relative;
+    bottom: 20%;
+    left: 30%;
     width: 165px;
     height: 40px;
     border-radius: 5px;
     background-color: #0DABAF;
     border-style: none;
-    color: white;
-    text-decoration: none;
+    font-family: "Work Sans",sans-serif;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25);
 }
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 input{
@@ -58,17 +60,23 @@ input{
 }
 
 .userInput{
-    border: 1px solid;
+    position: relative;
+    left: 30%;
+    border-bottom: 1px solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: white;
+    border-color: #F3F3F3;
     background-color: #01B9BD;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
     color: white;
+    width: 80%;
+    height: 5%;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: grey;
+    color: #F3F3F3;
     opacity: 1; /* Firefox */
 }
 
@@ -77,47 +85,56 @@ input{
 }
 
 .registrationStepTwo{
+    position: absolute;
+    left: 33%;
+    top: 10%;
+    height: 80%;
+    width: 33%;
+    border-radius: 12px;
     background-color: #01B9BD;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-left: 15%;
-    padding-top: 1%;
-    margin-top: 5%;
-    padding-bottom: 5%;
-    border-radius: 10px;
-    color: white;
 }
 
 .registrationButtonStepTwo{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20%;
     width: 165px;
     height: 40px;
     border-radius: 5px;
     background-color: #0DABAF;
     border-style: none;
-    color: white;
+    font-family: "Work Sans",sans-serif;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25);
 }
 
 .registrationPictureImg{
+    position: relative;
     border-radius: 50%;
-    margin-left: -20px;
+    left: 50%;
+    transform: translate(-50%);
     width: 200px;
     height: 200px;
+    box-shadow: 0 2px 12px 3px rgba(0,0,0,0.14);
 }
 
-.skin{
-    margin-left: 40px;
+.skip{
+    position: relative;
+    bottom: 5%;
+    left: 35%;
+    color: #FFFFFF;	
+    font-family: "Avenir Next", sans-serif;	
+    font-size: 20px;	
 }
 
 .registrationStepThree{
+    position: absolute;
+    left: 33%;
+    top: 10%;
+    height: 80%;
+    width: 33%;
+    border-radius: 12px;
     background-color: #01B9BD;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-left: 15%;
-    padding-top: 1%;
-    margin-top: 5%;
-    padding-bottom: 5%;
-    border-radius: 10px;
-    color: white;
 }
 
 .login{
@@ -147,12 +164,21 @@ input{
 }
 
 .titleTopp{
-    margin-left: 6%;
-    color:  white;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    color: #FFFFFF;	
+    font-family: "Work Sans", sans-serif;
+    font-size: 30px;
 }
 
 .titleBottom{
-    color:  #01B9BD;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    color: #FFFFFF;	
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
 }
 
 .userInputLogin{

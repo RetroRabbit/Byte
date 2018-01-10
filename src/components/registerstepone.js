@@ -19,7 +19,7 @@ class Registerstepone extends Component {
             <div className="registrationStepOne">
 
                 <h3 className="titleTopp"> Step One </h3>
-                <h2> THE BASICS </h2>
+                <h2 className="titleBottom"> THE BASICS </h2>
 
                 <input className="userInput" placeholder="Your name" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>
                 <input className="userInput" placeholder="Email" type="text" defaultValue={this.props.email} ref="email"/>     <br/><br/><br/>
@@ -30,7 +30,7 @@ class Registerstepone extends Component {
                 <BrowserRouter>
                     <div>
                         <header>
-                            <button onClick={ this.saveAndContinue.bind(this) } className="registrationButtonStepOne"> <Link to="/steptwo">  NEXT STEP </Link>  </button>
+                            <button onClick={ this.saveAndContinue.bind(this) } className="registrationButtonStepOne"> <Link to="/steptwo" >  NEXT STEP </Link>  </button>
                         </header>
                     </div>
                 </BrowserRouter>

@@ -17,17 +17,19 @@ body {
   margin-bottom: 50px;
 }
 .rounded{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   border-radius: 0 0 12px 12px;
   background-color: #004853;
 }
 form {
   background: white;
   width: 533px;
-  height: 500px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+  height: 600px;
 
   font-family: lato;
-  position: center;
   color: #333;
   border-radius: 10px;
 }
@@ -65,7 +67,7 @@ form input {
   border-color: transparent;
   line-height: 27px;
   font-size: 20px;
-  
+
 }
 form .help {
   margin-left: 20px;
@@ -95,10 +97,15 @@ form .help {
   transition: all 0.15s ease-in-out;
 }
 .position{
-  padding-left: 37%;
+  position: relative;
+  left: 50%;
 }
 .regbutton {
-  padding-top: 10px;
+  position: relative;
+  left: 25%;
+  top: 50%;
+
+  transform: translate(-50%,-50%);
   border: none;
   background: none;
   color: #FFFFFF;
@@ -114,8 +121,10 @@ form .help {
 
 .inside-the-footer
 {
-  height: 50px;
-  width: 533px;
+  position: absolute;
+  bottom: 0%;
+  height: 25%;
+  width: 100%;
   border-radius: 0 0 12px 12px;	background-color: #01B9BD;
   text-align: center;
   font-family: 'FontAwesome', sans-serif;
@@ -136,12 +145,37 @@ form img
 
 .welcome
 {
-  height: 30px;	width: 173px;	color: #004853;	font-family: 'FontAwesome', sans-serif;	font-size: 22px;	font-weight: 500;	line-height: 30px;	text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 20%;	
+  width: auto;	
+  color: #004853;	
+  font-family: 'Work Sans', sans-serif;	
+  font-size: 30px;	
+  font-weight: 500;	
+  line-height: 30px;	
+  text-align: center;
 }
 .otherfont{
-  color: #004853;	font-family: 'FontAwesome', sans-serif;	font-size: 22px;	font-weight: 500;	line-height: 30px;	text-align: center;
+  position: relative;
+  left: 10%;
+  border-bottom: 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color:#979797;
+  color: #004853;	
+  font-family: 'FontAwesome', sans-serif;	
+  font-size: 22px;	
+  line-height: 30px;	
+  text-align: left;
+  width: 60%;
+}
 
-
+.otherFont:placeholder{
+  color: #BBBBBB;
+  opacity: 1; 
 }
 
 form hr

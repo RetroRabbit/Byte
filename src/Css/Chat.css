@@ -42,7 +42,7 @@ body {
 #AddMessageBox{
   position: relative;
   top: 85%;
-  left: 0; 
+  left: 10%; 
   background-color: lightgray;
   height: 6%;
   width: 70%;
