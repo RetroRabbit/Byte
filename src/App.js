@@ -5,6 +5,7 @@ import ChatComponent from "./components/ChatComponent";
 import HeaderComponent from "./components/HeaderComponent";
 import SideComponent from "./components/SideComponent";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {LoginToReg,RegToSecondReg,RegToThirdReg,LoginToHome} from './actions/Actions';
 
 
 class App extends Component {
