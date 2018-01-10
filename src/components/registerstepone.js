@@ -9,8 +9,9 @@ import MainChat from './MainChatComponent';
 import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { LoginToHome } from '../actions/Actions'
+import { RegisterThis } from '../actions/Actions'
 import { setName,setPassword, setEmail } from '../reducers/Reducers'
+import { setValuesE } from '../reducers/Reducers'
 
 class Registerstepone extends Component {
 
@@ -18,11 +19,13 @@ class Registerstepone extends Component {
         super(props);
         this.state = {
             value: '',
-            submittedValue: ''
+            submittedValue: '',
+            emailValue:''
         }
         console.log(props);
         this.onChangeInput = this.onChangeInput.bind(this);
         this.onSubmitForm = this.onSubmitForm.bind(this);
+        this.onEmailInput = this.onEmailInput.bind(this);
         this.submit = this.submit.bind(this);
     }
 
@@ -38,12 +41,14 @@ class Registerstepone extends Component {
         //console.log(event.target.value);
   
     }
+    onEmailInput(event) {
+        event.preventDefault();        
+        this.setState({ emailValue: event.target.value });
+  }
     
     submit() {
-        this.props.setName(this.state.value);
-        this.props.setPassword(this.state.submittedValue);
-        this.props.setEmail(this.state.value);
-        console.log(this.props);
+        console.log(this.state.value, this.state.submittedValue,this.state.emailValue);
+        this.props.setValuesE(this.state.value, this.state.submittedValue,this.state.emailValue);
     }  
 
 
@@ -55,7 +60,7 @@ class Registerstepone extends Component {
                 <h2 className="titleBottom"> THE BASICS </h2>
 
                 <input className="userInput" onChange={this.onChangeInput} placeholder="Your name" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>
-                <input className="userInput" onChange={this.onChangeInput} placeholder="Email" type="text" defaultValue={this.props.email} ref="email"/>     <br/><br/><br/>
+                <input className="userInput" onChange={this.onEmailInput} placeholder="Email" type="text" defaultValue={this.props.email} ref="email"/>     <br/><br/><br/>
                 <input className="userInput" onChange={this.onSubmitForm} placeholder="Password" type="text" defaultValue={this.props.password} ref="password"/>  <br/><br/><br/>
                 <br/><br/><br/><br/>
                 
@@ -79,11 +84,9 @@ const mapStateToProps = (state) => ({
     email: state.email
  })
  
- const mapDispatchToProps =  dispatch => bindActionCreators ({
-     setName,
-     setPassword,
-     setEmail
- },dispatch)
+ const mapDispatchToProps = dispatch => bindActionCreators({
+    setValuesE
+},dispatch)
  
  export default connect(
     mapStateToProps,

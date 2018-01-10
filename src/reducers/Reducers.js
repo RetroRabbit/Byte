@@ -3,10 +3,10 @@ const SET_PASSWORD = 'SET_PASSWORD'
 const SET_EMAIL = 'SET_EMAIL'
 
 const initialState = {
-    userName: "1",
-    password: "2",
+    userName: "GIVE",
+    password: "US",
     userImage: "",
-    email: "3"
+    email: "POINTS"
 }
 
 
@@ -41,6 +41,17 @@ export function setValues(username, password) {
     } 
 }
 
+export function setValuesE(username, password,email) {
+    return {
+        type: SET_EMAIL,
+        payload: {
+            username,
+            password,
+            email
+        }
+    } 
+}
+
 export default (state = initialState, action) => {
     switch (action.type){
         case LOGIN_TO_HOME:
@@ -58,6 +69,8 @@ export default (state = initialState, action) => {
         case SET_EMAIL:
             return {
                 ...state,
+                userName: action.payload.username,
+                password: action.payload.password,
                 email: action.payload.email
             }
 

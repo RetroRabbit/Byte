@@ -4,9 +4,19 @@ export const LoginToReg = () => {
     }
  }
  
- export const LoginToHome = (username, password,email) => {
+ export const LoginToHome = (username, password) => {
     return{
         type: 'LOGIN_TO_HOME',
+        payload: {
+            username,
+            password
+        }
+    }
+ }
+
+ export const RegisterThis = (username, password, email) => {
+    return{
+        type: 'SET_EMAIL',
         payload: {
             username,
             password,
