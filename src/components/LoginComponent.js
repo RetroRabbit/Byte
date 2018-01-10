@@ -1,70 +1,76 @@
+import React, { Component } from 'react'
 
-import React, { Component } from 'react';
-
-import '../Css/App.css';
+import '../Css/App.css'
 import '../Css/style.css'
 //import loginJS from './login';
 //import $ from 'jquery';
 
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import ReactDOM from 'react-dom'
+import { push } from 'react-router-redux'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { BrowserRouter, Route, Link } from "react-router-dom"
+
+
 class LoginComponent extends Component {
 
-   constructor(props) {
-       super(props);
+  constructor(props) {
+      super(props);
 
-       this.state = {
-           value: '',
-           submittedValue: ''
-       }
+      this.state = {
+          value: '',
+          submittedValue: ''
+      }
+      console.log(this.props);
+      this.onChangeInput = this.onChangeInput.bind(this);
+      this.onSubmitForm = this.onSubmitForm.bind(this);
+  }
 
-       this.onChangeInput = this.onChangeInput.bind(this);
-       this.onSubmitForm = this.onSubmitForm.bind(this);
-   }
+  onChangeInput(event) {
+      this.setState({value: event.target.value});
+  }
 
-   onChangeInput(event) {
-       this.setState({value: event.target.value});
-   }
+  onSubmitForm(event) {
+      event.preventDefault();
+      this.setState({submittedValue: this.state.value});
+      //this.props.setScreenFunc(2, this.state.value);
 
-   onSubmitForm(event) {
-       event.preventDefault();
-       this.setState({submittedValue: this.state.value});
-       //this.props.setScreenFunc(2, this.state.value);
+  }
 
-   }
+  render() {
+   return (
+     
+  <div className="rounded">
+       <form>
+        <header >
+            <label className='welcome'>Welcome to the</label>
+            <br/>
+            <img className='welcome' src={require("../Images/Full_Logo.png")}/>
+       </header>
 
-   render() {
-    return (
-       
-   <div className="rounded">
-        <form>
-         <header >
-             <label className='welcome'>Welcome to the</label>
-             <br/>
-             <img className='welcome' src={require("../Images/Full_Logo.png")}/>
-        </header>
-
-          <input className='otherfont' placeholder="Email"  type="text" id="username" />
-          <br/><br/><br/>
-          <input  className='otherfont' placeholder="Password" type="pwd" id="pwd"/>
-          <br/><br/><br/>
-            <div className='position'>
-                <button className='button'><Link to="/mainChat">Login </Link></button>
-            </div>
+         <input className='otherfont' placeholder="Email"  type="text" id="username" />
+         <br/><br/><br/>
+         <input  className='otherfont' placeholder="Password" type="pwd" id="pwd"/>
+         <br/><br/><br/>
+           <div className='position'>
+               <button className='button'><Link to="/mainChat">Login </Link></button>
+           </div>
 
 
-            <div class="inside-the-footer"><button className='regbutton'> <Link to="/registration">No account yet? Get setup now</Link></button></div>  
-        </form>
+           <div class="inside-the-footer"><button className='regbutton'> <Link to="/registration">No account yet? Get setup now</Link></button></div>  
+       </form>
 
-   </div>
-         );
-   }
+  </div>
+        );
+  }
 }
 
-mapStateToProps(reducername) {
-    username: reducername.username
-}
+const mapStateToProps = (state) => ({
+   username: state.userName,
+   password: state.password
+})
 
-mapDispatchToProps
-setName
-export default LoginComponent;
+export default connect(
+   mapStateToProps,
+   null
+)(LoginComponent)

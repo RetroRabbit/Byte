@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import RegisterStepOne from './registerstepone';
 import RegisterStepTwo from './registersteptwo';    
 import RegisterStepThree from './registerstepthree';
-import MainChat from './mainChat';
+import MainChat from './MainChatComponent';
 
 var fieldValues = {
     name: null,
