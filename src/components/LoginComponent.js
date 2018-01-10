@@ -22,7 +22,6 @@ class LoginComponent extends Component {
            value: '',
            submittedValue: ''
        }
-       console.log(this.props);
        this.onChangeInput = this.onChangeInput.bind(this);
        this.onSubmitForm = this.onSubmitForm.bind(this);
    }

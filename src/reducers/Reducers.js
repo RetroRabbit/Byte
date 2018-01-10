@@ -15,7 +15,6 @@ export default  (state = initialState, action) => {
             }
 
         case 'GO_REG':
-            console.log("Clicked to go to home page");
             return Object.assign({}, state, {
                 react: state.userName = "User name entered"
             })
