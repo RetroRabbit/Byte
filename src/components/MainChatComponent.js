@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../Css/App.css';
 import LoginComponent from "../components/LoginComponent";
 import ChatComponent from "../components/ChatComponent";
 import HeaderComponent from "../components/HeaderComponent";
@@ -7,7 +6,7 @@ import SideComponent from "../components/SideComponent";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
-class App extends Component {
+class MainChat extends Component {
   render() {
       return <div className="App">
 
@@ -26,4 +25,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default MainChat;
