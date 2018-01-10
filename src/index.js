@@ -29,19 +29,4 @@ ReactDOM.render(
     , document.getElementById('root'));
 registerServiceWorker();
 
-ReactDOM.render(
-    
-    <BrowserRouter>
-        <div>
-            <Route exact path="/" component={Login}>Login</Route>
-            <Route path="/settings" component={Settings}></Route>
-            <Route path="/registration" component={Registration}></Route>
-            <Route path="/stepone" component={Registerstepone}></Route>
-            <Route path="/steptwo" component={Registersteptwo}></Route>
-            <Route path="/stepthree" component={Registerstepthree}></Route>
-            <Route path="/mainChat" component={MainChat}></Route>
-        </div>
-    </BrowserRouter>
 
-    , document.getElementById('root'));
-registerServiceWorker();
