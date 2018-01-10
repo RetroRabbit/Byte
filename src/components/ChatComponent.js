@@ -32,12 +32,17 @@ class ChatComponents extends React.Component {
     const messageObject = {
       username: this.props.username,
       message
+
     };
 
     // Emit the message to the server
     this.socket.emit('client:message', messageObject);
 
     messageObject.fromMe = true;
+    if(messageObject.fromMe == true)
+    {
+      
+    }
     this.addMessage(messageObject);
   }
 
@@ -46,13 +51,17 @@ class ChatComponents extends React.Component {
     const messages = this.state.messages;
     messages.push(message);
     this.setState({ messages });
+    console.log(messages);
+    
   }
 
   render() {
     return (
       <MuiThemeProvider>
       <div className="Main">
+
       <Messages messages={this.state.messages} className="AddMessageBox"/>
+
       <div id="Addbutton">
       <FloatingActionButton >
             <ContentAdd/>

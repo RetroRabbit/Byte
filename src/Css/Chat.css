@@ -38,16 +38,16 @@ body {
   bottom: 0;
   left: 10%;  
 }
-
-#AddMessageBox{
+#AddMessageBox {
   position: relative;
   top: 85%;
-  left: 0; 
+  left: 0;
   background-color: lightgray;
   height: 6%;
   width: 70%;
   text-align: left;
   border-radius: 25px;
+  height: 50px;
 }
 
 #AddConversationMessageBoxSent{
@@ -127,9 +127,31 @@ body {
     padding-right: 5%;
 }
 
-form#ChatForm
-{
- 
-  width: auto;
-  height: auto;
+form#ChatForm {
+  width: 1150px;
+  height: 15px;
+  float: left;
+  margin-top: 0px;
+  padding-bottom: 67px;
 }
+
+/*form#ChatForm {
+  width: 700px;
+  height: 15px;
+  float: left;
+  margin-top: 0px;
+  padding-bottom: 67px;
+}
+
+
+/*.AddMessageBox {
+  position: relative;
+  top: 85%;
+  left: 0;
+  background-color: lightgray;
+  height: 6%;
+  width: 70%;
+  text-align: left;
+  border-radius: 25px;
+  height: 50px;
+}*/

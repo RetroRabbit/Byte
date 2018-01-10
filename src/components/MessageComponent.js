@@ -10,6 +10,8 @@ class Message extends React.Component {
 //Need to change to current template
 
 <div id = "AddConversationMessageBoxSent">
+<br/>
+       
       <div className={`message ${fromMe}`}>
         <div className='username'>
           { this.props.username }
@@ -17,6 +19,9 @@ class Message extends React.Component {
         <div className='ChatText'>
           { this.props.message }
         </div>
+
+    
+
       </div>
   </div>
     );
