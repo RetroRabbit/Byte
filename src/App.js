@@ -18,7 +18,7 @@ class App extends Component {
           <ChatComponent/>
           <SideComponent/>
 
-</MuiThemeProvider>
+          </MuiThemeProvider>
       </div>;
 
   }
