@@ -10,7 +10,7 @@ const initialState = {
     userName: "GIVE",
     password: "US",
     email: "POINTS",
-    userImage: "C:\\Users\\Zac\\Pictures\\Props"
+    userImage: "C:/Users/Zac/Pictures/Props"
 }
 
 
