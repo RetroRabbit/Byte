@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import Registration from './registration';
 import Registerstepone from './registerstepone';
 import Registerstepthree from './registerstepthree';
-import MainChat from './mainChat';
+import MainChat from './MainChatComponent';
 
 class Registersteptwo extends Component {
 
@@ -19,7 +19,7 @@ class Registersteptwo extends Component {
             <div className="registrationStepTwo">
 
                 <h3 className="titleTopp"> Step Two </h3>
-                <h2> PROFILE PICTURE </h2>
+                <h2 className="titleBottom"> PROFILE PICTURE </h2>
 
                 <img className="registrationPictureImg" src={require('../registration.png')} alt="profile picture" />
                 <br/><br/><br/><br/>
