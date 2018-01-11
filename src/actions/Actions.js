@@ -24,3 +24,12 @@ export const LoginToReg = () => {
         }
     }
  }
+
+ export const PPic = (userimage) => {
+     return {
+         type: 'PROFILE_PIC',
+         payload: {
+            userimage
+        } 
+    }
+ }

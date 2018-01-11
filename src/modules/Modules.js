@@ -4,5 +4,6 @@ import loginReducer from '../reducers/Reducers'
 
 export default combineReducers({
    routing: routerReducer,
-   login: loginReducer
+   login: loginReducer,
+
 })
