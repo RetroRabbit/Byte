@@ -40,8 +40,6 @@ constructor(props) {
     onSubmitForm(event) {
         event.preventDefault();
         this.setState({submittedValue: event.target.value});
-        //this.props.setScreenFunc(2, this.state.value);
-        //console.log(event.target.value);
   
     }
     onEmailInput(event) {
