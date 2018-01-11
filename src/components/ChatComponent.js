@@ -12,6 +12,8 @@ import ChatInput from './ChatInputComponent';
 import ChatMessage from './MessageComponent';
 import Messages from './MessagesComponent';
 
+import ReactDOM from 'react-dom';
+
 class ChatComponents extends React.Component {
   socket = {};
   constructor(props) {
@@ -52,6 +54,7 @@ class ChatComponents extends React.Component {
     messages.push(message);
     this.setState({ messages });
     console.log(messages);
+   
     
   }
 

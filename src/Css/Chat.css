@@ -48,6 +48,7 @@ body {
   text-align: left;
   border-radius: 25px;
   height: 50px;
+  
 }
 
 #AddConversationMessageBoxSent{
@@ -56,11 +57,14 @@ body {
   right: 10%;
   top: 20%;
   height: auto;
+  width: auto;
   max-width: 60%;
   border-radius: 25px;
   background-color: #01b9bd;
   text-decoration-color: black;
   text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .ChatText{	
@@ -83,6 +87,7 @@ body {
   display:inline-block;
   position: absolute;
   left: 10%;
+  
   top: 55%;
   height: auto;
   max-width: 60%;
@@ -133,6 +138,7 @@ form#ChatForm {
   float: left;
   margin-top: 0px;
   padding-bottom: 67px;
+  box-shadow: none;
 }
 
 /*form#ChatForm {
