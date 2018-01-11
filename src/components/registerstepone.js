@@ -65,13 +65,12 @@ class Registerstepone extends Component {
                 <br/><br/><br/><br/>
                 
 
-                <BrowserRouter>
+               
                     <div>
                         <header>
                             <button onClick={this.submit} className="registrationButtonStepOne"> <Link to="/steptwo" >  NEXT STEP </Link>  </button>
                         </header>
                     </div>
-                </BrowserRouter>
             </div>
         )
     }
