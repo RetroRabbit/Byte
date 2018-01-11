@@ -3,6 +3,7 @@ const SET_PASSWORD = 'SET_PASSWORD'
 const SET_EMAIL = 'SET_EMAIL'
 const PROFILE_PIC = 'PROFILE_PIC';
 const LOG_OUT = 'LOG_OUT'
+const CHANGE_DET = 'CHANGE_DET';
 
 
 const initialState = {
@@ -55,6 +56,17 @@ export function setValuesE(username, password,email) {
     } 
 }
 
+export function changesE(username, email) {
+    return {
+        type: CHANGE_DET,
+        payload: {
+            username,
+            email
+        }
+    } 
+}
+
+
 export function setImage(userimage) {
     return {
         type: PROFILE_PIC,
@@ -100,6 +112,12 @@ export default (state = initialState, action) => {
         case LOG_OUT:
             return {
                 initialState
+            }
+        case CHANGE_DET:
+            return {
+                ...state,
+                userName: action.payload.username,
+                email: action.payload.email
             }
 
         
