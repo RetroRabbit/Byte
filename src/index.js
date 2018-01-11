@@ -13,6 +13,8 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore} from 'redux';
 import myReducers from './reducers/Reducers';
 import App from './App';
+
+
 let store = createStore(myReducers);
 
 function render(){
