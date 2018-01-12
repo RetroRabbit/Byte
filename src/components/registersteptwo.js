@@ -11,6 +11,9 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { PPic } from '../actions/Actions'
 import { setImage } from '../reducers/Reducers'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentAdd from 'material-ui/svg-icons/content/add';
 
 class Registersteptwo extends Component {
 
@@ -22,6 +25,10 @@ class Registersteptwo extends Component {
         console.log(props);
         this.onImageClick = this.onImageClick.bind(this);
         this.submit = this.submit.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+
+        
+        var objectURL = require('../registration.png');
     }
 
     onImageClick(event) {
@@ -30,17 +37,23 @@ class Registersteptwo extends Component {
     }
 
     submit() {
-        this.props.setImage(this.state.value);
+        this.props.setImage(this.objectURL);
     }  
 
     onImageChange(event) {
-
         event.preventDefault();
         if (event.target.files && event.target.files[0]) {
             this.setState({ value: event.target.value });
+            this.objectURL = window.URL.createObjectURL(event.target.files[0])
         }
+        
     }
 
+    handleClick(e) {
+        this.refs.fileUploader.click();
+    }
+
+    
     render(){
         return (
             <div className="registrationStepTwo">
@@ -48,8 +61,15 @@ class Registersteptwo extends Component {
                 <h3 className="titleTopp"> Step Two </h3>
                 <h2 className="titleBottom"> PROFILE PICTURE </h2>
 
-                {/* <img  onClick={this.onImageChange.bind(this)} className="registrationPictureImg" src={require('../registration.png')} alt="profile picture" /> */}
-                <input type="file" onChange={this.onImageChange.bind(this)} className="registrationPictureImg" id="group_image"  src={require('../registration.png')} alt="profile picture" />
+                <img for="picID" className="registrationPictureImg" src={this.objectURL || require('../registration.png')} alt="profile picture"  /> 
+                <MuiThemeProvider> 
+                <FloatingActionButton className="Addbutton" onClick={this.handleClick}>
+                        <ContentAdd/>
+                </FloatingActionButton>
+                 </MuiThemeProvider>  
+                
+
+                <input type="file" id="picID" onChange={this.onImageChange.bind(this)} className="registrationPictureImg" style={{ display: 'none' }} ref="fileUploader" />
                 <br/><br/><br/><br/>
 
                     <div>
