@@ -33,3 +33,12 @@ export const LoginToReg = () => {
         } 
     }
  }
+
+ export const Friends = (friend) => {
+     return {
+         type: 'SET_FRIEND',
+         payload: {
+             friend
+         }
+     }
+ }
