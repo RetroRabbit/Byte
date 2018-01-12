@@ -4,13 +4,15 @@ const SET_EMAIL = 'SET_EMAIL'
 const PROFILE_PIC = 'PROFILE_PIC';
 const LOG_OUT = 'LOG_OUT'
 const CHANGE_DET = 'CHANGE_DET';
+const SET_FRIEND = 'SET_FRIEND';
 
 
 const initialState = {
     userName: "GIVE",
     password: "US",
     email: "POINTS",
-    userImage: "C:\\Users\\Zac\\Pictures\\Props"
+    userImage: "C:\\Users\\Zac\\Pictures\\Props",
+    friendM: "NONE"
 }
 
 
@@ -76,6 +78,15 @@ export function setImage(userimage) {
     } 
 }
 
+export function setFriend(friend) {
+    return {
+        type: SET_FRIEND,
+        payload: {
+            friend
+        }
+    } 
+}
+
 export function logout() {
     return {
         type: LOG_OUT ,  
@@ -119,7 +130,11 @@ export default (state = initialState, action) => {
                 userName: action.payload.username,
                 email: action.payload.email
             }
-
+        case SET_FRIEND:
+            return {
+                ...state,
+                friendM: action.payload.friend    
+        }    
         
 
         default:
