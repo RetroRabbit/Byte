@@ -109,16 +109,16 @@ class ChatComponents extends React.Component {
     return (
       <MuiThemeProvider>
       <div className="Main">
-
+{/*
       <div id="Addbutton">
-
-<FloatingActionButton>
+*/}
+{/*<FloatingActionButton>
   <ContentAdd/>
-</FloatingActionButton>
-
+</FloatingActionButton>*/}
+{/*
 </div>
   <input id="AddMessageBox" className="EnterText" type="text" onChange={ this.appendNewMessagesToChat.bind(this) } />
-<div className="Messages" id="Messages">  
+<div className="Messages" id="Messages">  */}
 
 {/* <div id = "AddConversationMessageBoxSent">
     <div className="ChatText" >
@@ -144,11 +144,12 @@ This is some text that will be received by the user. It will text wrap if the te
 </div>
 </div> */}
 
+{/*
 <div id="newMessageHere">
 
-</div>
-
-</div>
+</div>*/}
+{/*
+</div> */}
 
       <Message  />
       <div> </div>
