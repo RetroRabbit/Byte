@@ -51,8 +51,7 @@ body {
 }
 
 #AddConversationMessageBoxSent{
-  display: inline-block;
-  position: absolute;
+
   right: 10%;
   top: 20%;
   height: auto;
@@ -60,17 +59,19 @@ body {
   border-radius: 25px;
   background-color: #01b9bd;
   text-decoration-color: black;
-  text-align: left;
+  float: right;
+  list-style-type: none;
 }
 
 .ChatText{	
-  top:50%;
+ 
   height: 6.54%;	
   color: #FFFFFF;	
   font-family: 'Work Sans', sans-serif;	
   font-size: 16px;	
   padding: 10px 18px;
   overflow-wrap: normal;
+  text-align: left;
 }
 
 @font-face {
@@ -80,10 +81,9 @@ body {
 
 
 #AddConversationMessageBoxReceived{
-  display:inline-block;
+
   position: absolute;
-  left: 10%;
-  top: 55%;
+  left: 10%; 
   height: auto;
   max-width: 60%;
   border-radius: 25px;
