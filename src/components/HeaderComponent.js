@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import avatarLogo from '../Images/Icon.png';
 import FlatButton from 'material-ui/FlatButton'
 import Avatar from 'material-ui/Avatar';
@@ -11,6 +12,9 @@ import '../Css/Header.css';
 import { List, ListItem } from 'material-ui/List';
 import ActionInfo from 'material-ui/svg-icons/navigation/cancel';
 import { connect } from 'react-redux'
+import DefImage from '../Images/bunnyDefault.jpg';
+import { bindActionCreators } from 'redux'
+import { logout } from '../reducers/Reducers'
 
 const appbarstyle = {
   backgroundColor: '#01B9BD',
@@ -86,6 +90,11 @@ class HeaderComponent extends React.Component {
     });
   };
 
+  submit() {
+    this.props.logout();
+}  
+
+
   render() {
     //rendering the background color of a new chat button based on hovering action of the user
     var bgColor = this.state.newchat_color ? "#0DABAF" : "#FF5722"
@@ -131,8 +140,8 @@ class HeaderComponent extends React.Component {
             onRequestClose={this.handleRequestClose}
           >
             <Menu>
-              <MenuItem primaryText="Settings" />
-              <MenuItem primaryText="Logout" />
+            <Link to="/settings"  > <MenuItem primaryText="Settings" > </MenuItem>  </Link>
+            <Link to="/" onClick={ this.submit } > <MenuItem primaryText="Logout" > </MenuItem>  </Link>
             </Menu>
           </Popover>
         </div>
@@ -141,7 +150,7 @@ class HeaderComponent extends React.Component {
         </div >
 
         <div style={{ float: 'right' }}>
-          <Avatar src={avatarLogo} onClick={this.handleClick} onMouseEnter={this.handleClick} style={avatarStyle} />
+          <Avatar src={this.props.userimage  } onClick={this.handleClick} onMouseEnter={this.handleClick} style={avatarStyle} />
         </div >
       </div>
     );
@@ -160,11 +169,16 @@ class HeaderComponent extends React.Component {
 
 const mapStateToProps = ({login}) => ({
     username: login.userName,
-    password: login.password
+    password: login.password,
+    userimage: login.userImage
  })
 
  
- export default connect(
-    mapStateToProps,
-    null
- )(HeaderComponent)
+ const mapDispatchToProps = dispatch => bindActionCreators({
+  logout
+},dispatch)
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HeaderComponent)

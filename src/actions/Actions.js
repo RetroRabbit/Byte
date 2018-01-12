@@ -62,3 +62,20 @@ export const LoginToReg = () => {
         }
     }
  }
+ export const PPic = (userimage) => {
+     return {
+         type: 'PROFILE_PIC',
+         payload: {
+            userimage
+        } 
+    }
+ }
+
+ export const Friends = (friend) => {
+     return {
+         type: 'SET_FRIEND',
+         payload: {
+             friend
+         }
+     }
+ }

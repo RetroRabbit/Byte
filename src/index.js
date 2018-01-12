@@ -12,6 +12,7 @@ import MainChat from './components/MainChatComponent';
 import registerServiceWorker from './registerServiceWorker';
 import {createStore} from 'redux';
 import myReducers from './reducers/Reducers';
+
 import Provider from 'react-redux/lib/components/Provider';
 import store from './Store';
 import {render} from 'react-dom';
