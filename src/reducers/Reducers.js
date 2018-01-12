@@ -7,6 +7,8 @@ const CHANGE_DET = 'CHANGE_DET';
 const SET_FRIEND = 'SET_FRIEND';
 
 
+
+
 const initialState = {
     userName: "GIVE",
     password: "US",

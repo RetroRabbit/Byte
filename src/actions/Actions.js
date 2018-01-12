@@ -25,6 +25,43 @@ export const LoginToReg = () => {
     }
  }
 
+ export const setMessage = (username, current_messagel) => {
+    return{
+        type: 'CURRENT_MESSAGE',
+        payload: {
+            username,
+            current_messagel
+        }
+    }
+ }
+
+ export const setTimeStamp = (timeStamp) => {
+    return{
+        type: 'TIME_STAMP',
+        payload: {
+            timeStamp
+        }
+    }
+ }
+
+ export const setFromMe = (fromMe) => {
+    return{
+        type: 'FROM_ME',
+        payload: {
+            fromMe
+        }
+    }
+ }
+
+ export const getMessage = (username, message) => {
+    return{
+        type: 'CURRENT_MESSAGE',
+        payload: {
+            username,
+            message
+        }
+    }
+ }
  export const PPic = (userimage) => {
      return {
          type: 'PROFILE_PIC',

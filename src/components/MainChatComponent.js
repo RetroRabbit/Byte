@@ -17,7 +17,7 @@ class MainChat extends Component {
 
 
           <MuiThemeProvider>
-          {/* <LoginComponent/>   */}
+         {/*<LoginComponent/>*/}   
           <HeaderComponent/>
           <ChatComponent/>
           <SideComponent/>
@@ -33,6 +33,7 @@ const mapStateToProps = ({login}) => ({
     username: login.userName,
     password: login.password
  })
+
 
  
  export default connect(

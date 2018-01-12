@@ -38,18 +38,17 @@ body {
   bottom: 0;
   left: 10%;  
 }
-
-#AddMessageBox{
-  position: fixed;
+#AddMessageBox {
+  position: relative;
   top: 85%;
-  left: 10%; 
+  left: 0;
   background-color: lightgray;
   height: 6%;
-  width: 50%;
+  width: 70%;
   text-align: left;
   border-radius: 25px;
-  z-index: 100;
-  margin-left: 25%
+  height: 50px;
+  
 }
 
 #AddConversationMessageBoxSent{
@@ -58,16 +57,19 @@ body {
   right: 10%;
   top: 20%;
   height: auto;
+  width: auto;
   max-width: 60%;
   border-radius: 25px;
   background-color: #01b9bd;
   text-decoration-color: black;
   text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .ChatText{	
   top:50%;
-  height: 3%;	
+  height: 6.54%;	
   color: #FFFFFF;	
   font-family: 'Work Sans', sans-serif;	
   font-size: 16px;	
@@ -85,8 +87,10 @@ body {
   display:inline-block;
   position: absolute;
   left: 10%;
+  
   top: 55%;
   height: auto;
+  max-width: 60%;
   border-radius: 25px;
   background-color: teal;
   text-decoration-color: black;
@@ -114,10 +118,10 @@ body {
 }
 
 .EnterText{
-  position: relative;
+  position: absolute;
     height: auto;
     width: 80%;
-    left: 5%;
+   left: 5%;
     color: #706F6F;
     font-family: "Work Sans", sans-serif;
     font-size: 17px;
@@ -128,26 +132,26 @@ body {
     padding-right: 5%;
 }
 
-#AddNewMessageSent{
+form#ChatForm {
+  width: 1150px;
+  height: 15px;
+  float: left;
+  margin-top: 0px;
+  padding-bottom: 67px;
+  box-shadow: none;
+}
 
-  background-color: teal;
-  margin-top: 2%;
-  padding-top: 40px;
-  padding-left: 30px;
+/*form#ChatForm {
+  width: 700px;
+  height: 15px;
+  float: left;
+  margin-top: 0px;
+  padding-bottom: 67px;
+}
 
-  
-  margin-left: 30%;
-  padding-top: 2%;
-  height: auto;
-  width: 100%;
-  border-radius: 25px;
-  background-color: #01b9bd;
-  text-decoration-color: black;
-  text-align: left;
-  /* overflow:scroll; 
-  height:100px; */
 
-  /* position: relative;
+/*.AddMessageBox {
+  position: relative;
   top: 85%;
   left: 0;
   background-color: lightgray;
@@ -155,11 +159,5 @@ body {
   width: 70%;
   text-align: left;
   border-radius: 25px;
-  height: 50px; */
-
-}
-
-.Main{
-  overflow-y:scroll; 
-  height:800px;
-}
+  height: 50px;
+}*/
