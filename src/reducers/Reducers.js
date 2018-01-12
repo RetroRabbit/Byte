@@ -2,6 +2,8 @@ const LOGIN_TO_HOME = 'LOGIN_TO_HOME'
 const SET_PASSWORD = 'SET_PASSWORD'
 const SET_EMAIL = 'SET_EMAIL'
 
+
+
 const initialState = {
     userName: "GIVE",
     password: "US",

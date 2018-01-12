@@ -1,6 +1,17 @@
 import React from 'react';
 import '../Css/Chat.css';
 
+import { push } from 'react-router-redux';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import { } from '../actions/Actions';
+import messages from '../reducers/messageReducer'
+import loginred from '../reducers/Reducers'
+
+
+import { setMessage, setFromMe, setTimeStamp, getFromMe, getMessage } from '../reducers/ChatReducers';
+
 class ChatInput extends React.Component {
   constructor(props) {
     super(props);
@@ -20,19 +31,32 @@ class ChatInput extends React.Component {
 
     // Call the onSend callback with the chatInput message
     this.props.onSend(this.state.chatInput);
+    console.log(this.state.chatInput);
   }
 
   textChangeHandler(event)  {
-    this.setState({ chatInput: event.target.value });
+    this.setState({ message: event.target.value });
+  }
+
+handleKeyPressTest = (e) => {
+    if (e.key === 'Enter') {
+      var message=e.target.value;
+      var username=this.props.username
+      e.preventDefault();
+      this.props.dispatch(setMessage(username,message));
+
+    }
   }
 
   render() {
+   
     return (
       <form id="ChatForm" className="Main" onSubmit={this.submitHandler}>
         <input type="text"
           onChange={this.textChangeHandler}
-          value={this.state.chatInput}
-          className="EnterText"
+       //   value={this.state.chatInput}
+          onKeyPress={this.handleKeyPressTest}
+         className="EnterText"
           id="AddMessageBox"
           placeholder="Write a message..."
           required />
@@ -41,7 +65,16 @@ class ChatInput extends React.Component {
   }
 }
 
-ChatInput.defaultProps = {
-};
+const mapStateToProps = (state) => ({
+  username: state.login.userName,
+  password: state.password,
+  message:state.message
+})
 
-export default ChatInput;
+const mapDispatchToProps=dispatch=>bindActionCreators({
+  setMessage, setFromMe, setTimeStamp, getFromMe, getMessage
+},dispatch)
+export default connect(
+  mapStateToProps,
+  null
+)(ChatInput)

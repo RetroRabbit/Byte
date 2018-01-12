@@ -34,8 +34,6 @@ class LoginComponent extends Component {
         this.setState({ value: event.target.value });
     }
   
-    
-
   onSubmitForm(event) {
       event.preventDefault();
       this.setState({submittedValue: event.target.value});
@@ -46,7 +44,6 @@ class LoginComponent extends Component {
   }
   
   submit() {
-      console.log(this.state.value, this.state.submittedValue);
       this.props.setValues(this.state.value, this.state.submittedValue);
   }  
 

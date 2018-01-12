@@ -29,9 +29,7 @@ class App extends React.Component {
     }
 
     // Initial page load, show a simple login form
-    return (
-      <div>"Hello"</div>
-    );
+    
   }
 
 }

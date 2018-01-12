@@ -10,77 +10,102 @@ import io from 'socket.io-client';
 
 import ChatInput from './ChatInputComponent';
 import ChatMessage from './MessageComponent';
-import Messages from './MessagesComponent';
+import Message from './MessageComponent';
 
 import ReactDOM from 'react-dom';
 
+import { push } from 'react-router-redux';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import { } from '../actions/Actions';
+import { setMessage, setFromMe, setTimeStamp, getFromMe, getMessage } from '../reducers/ChatReducers';
+
 class ChatComponents extends React.Component {
-  socket = {};
+  //Take out socket 
+  //socket = {};
   constructor(props) {
     super(props);
-    this.state = { messages: [] };
-    this.sendHandler = this.sendHandler.bind(this);
-    
-    // Connect to the server
-    this.socket = io("http://localhost", { query: `username=${props.username}` }).connect();
 
-    // Listen for messages from the server
-    this.socket.on('server:message', message => {
-      this.addMessage(message);
-    });
-  }
-
-  sendHandler(message) {
-    const messageObject = {
-      username: this.props.username,
-      message
-
+    this.state = {
+       message: '',
+       submittedValue: '' 
     };
 
-    // Emit the message to the server
-    this.socket.emit('client:message', messageObject);
-
-    messageObject.fromMe = true;
-    if(messageObject.fromMe == true)
-    {
-      
+      console.log(props)
+      this.sendHandler = this.sendHandler.bind(this);
+      this.addMessage = this.addMessage.bind(this);
+      this.submit = this.submit.bind(this);
+    
     }
-    this.addMessage(messageObject);
+
+    sendHandler(username, message) {
+
+    setMessage(username, message);
+    if(username === this.state.username)
+    {
+      setFromMe(true);
+    }
+    else
+    {
+      setFromMe(false);
+    }
+  
   }
 
-  addMessage(message) {
-    // Append the message to the component state
-    const messages = this.state.messages;
-    messages.push(message);
-    this.setState({ messages });
-    console.log(messages);
-   
+  addMessage(event) {
+    // Push to message stack
+    //this.state.messages;
+    //const messages = "";
+   // messages.push(message);
+   // this.setState({ messages });
+    //console.log(messages);
+//    event.preventDefault();
+    this.setState({submit: event.target.message});
     
   }
+  submit()
+  {
+    this.props.setMessage(this.state.username, this.state.message);
+  }
 
+  //ClassName = 'AddMessageBox'
+  //EnterText ChatInput
   render() {
     return (
       <MuiThemeProvider>
       <div className="Main">
 
-      <Messages messages={this.state.messages} className="AddMessageBox"/>
+
+      <Message  />
+      <div> </div>
 
       <div id="Addbutton">
       <FloatingActionButton >
             <ContentAdd/>
           </FloatingActionButton>
         </div>
-        <ChatInput onSend={this.sendHandler}
-        id="AddMessageBox" 
-        className="EnterText" />
+        <ChatInput onSend={this.addMessage}
+        id="" 
+        className="" />
       </div>
       </MuiThemeProvider>
     );
   }
 
 }
-ChatComponents.defaultProps = {
-  username: 'Anonymous'
-};
 
-export default ChatComponents;
+const mapStateToProps = (state) => ({
+  username: state.userName,
+  password: state.password,
+  message: state.message
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  setMessage
+},dispatch)
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ChatComponents)
