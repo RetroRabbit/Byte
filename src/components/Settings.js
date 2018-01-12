@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { setName,setPassword, setEmail } from '../reducers/Reducers'
 import { changesE , setImage} from '../reducers/Reducers'
 import HeaderComponent from "../components/HeaderComponent";
-import FontAwesome from 'react-fontawesome'
+//import FontAwesome from 'react-fontawesome' - Need to un-comment
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { BrowserRouter, Route, Link } from "react-router-dom"
 // Setting class having the profile details
