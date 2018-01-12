@@ -15,7 +15,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    height: 90%;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     border: 5% solid rgb(255, 255, 255);
 }
@@ -24,8 +25,8 @@
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    height: 40%;
-    width: 30%;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     border: 5% solid rgb(255, 255, 255);
     box-shadow: 0 2px 12px 3px rgba(0,0,0,0.14);
@@ -79,15 +80,17 @@ body{
 
 .Addbutton{
   position: absolute;
-  top: 48%;
-  left: 44%;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   color: grey;
 }
 
 .registrationButtonStepOne{
-    position: relative;
-    bottom: 20%;
-    left: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
     width: 165px;
     height: 40px;
     border-radius: 5px;
@@ -135,8 +138,9 @@ input{
 
 .registrationStepTwo{
     position: absolute;
-    left: 33%;
-    top: 10%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     height: 80%;
     width: 33%;
     border-radius: 12px;
@@ -158,10 +162,11 @@ input{
 }
 
 .registrationPictureImg{
-    position: relative;
+    position: absolute;
     border-radius: 50%;
     left: 50%;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;
     box-shadow: 0 2px 12px 3px rgba(0,0,0,0.14);
@@ -224,7 +229,7 @@ input{
 
 .titleBottom{
     position: relative;
-    top: 0%;
+    top: 5%;
     text-align: center;
     color: #FFFFFF;	
     font-family: "Work Sans", sans-serif;

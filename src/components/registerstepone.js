@@ -61,16 +61,10 @@ class Registerstepone extends Component {
 
                 <input className="userInput" onChange={this.onChangeInput} placeholder="Your name" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>
                 <input className="userInput" onChange={this.onEmailInput} placeholder="Email" type="text" defaultValue={this.props.email} ref="email"/>     <br/><br/><br/>
-                <input className="userInput" onChange={this.onSubmitForm} placeholder="Password" type="text" defaultValue={this.props.password} ref="password"/>  <br/><br/><br/>
-                <br/><br/><br/><br/>
+                <input className="userInput" onChange={this.onSubmitForm} placeholder="Password" type="text" defaultValue={this.props.password} ref="password"/>
                 
 
-               
-                    <div>
-                        <header>
-                            <button onClick={this.submit} className="registrationButtonStepOne"> <Link to="/steptwo" >  NEXT STEP </Link>  </button>
-                        </header>
-                    </div>
+               <button onClick={this.submit} className="registrationButtonStepOne"> <Link to="/steptwo" >  NEXT STEP </Link>  </button>
             </div>
         )
     }

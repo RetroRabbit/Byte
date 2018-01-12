@@ -58,16 +58,17 @@ class Registersteptwo extends Component {
         return (
             <div className="registrationStepTwo">
 
-                <h3 className="titleTopp"> Step Two </h3>
-                <h2 className="titleBottom"> PROFILE PICTURE </h2>
+                <div className="titleTopp"> Step Two </div>
+                <div className="titleBottom"> PROFILE PICTURE </div>
 
-                <img for="picID" className="registrationPictureImg" src={this.objectURL || require('../registration.png')} alt="profile picture"  /> 
+                <img for="picID" className="registrationPictureImg" src={this.objectURL || require('../registration.png')} alt="profile picture" /> 
+                <div>
                 <MuiThemeProvider> 
                 <FloatingActionButton className="Addbutton" onClick={this.handleClick}>
                         <ContentAdd/>
                 </FloatingActionButton>
                  </MuiThemeProvider>  
-                
+                </div>
 
                 <input type="file" id="picID" onChange={this.onImageChange.bind(this)} className="registrationPictureImg" style={{ display: 'none' }} ref="fileUploader" />
                 <br/><br/><br/><br/>
