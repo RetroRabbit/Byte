@@ -146,11 +146,11 @@ class HeaderComponent extends React.Component {
           </Popover>
         </div>
         <div style={{ float: 'right' }}>
-          <Avatar src={this.props.userimage} style={avatarStyle} />
+          <Avatar src={avatarLogo} style={avatarStyle} />
         </div >
 
         <div style={{ float: 'right' }}>
-          <Avatar src={avatarLogo} onClick={this.handleClick} onMouseEnter={this.handleClick} style={avatarStyle} />
+          <Avatar src={this.props.userimage  } onClick={this.handleClick} onMouseEnter={this.handleClick} style={avatarStyle} />
         </div >
       </div>
     );

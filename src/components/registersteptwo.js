@@ -28,6 +28,7 @@ class Registersteptwo extends Component {
         this.handleClick = this.handleClick.bind(this);
 
         
+        var objectURL = require('../registration.png');
     }
 
     onImageClick(event) {
@@ -36,13 +37,14 @@ class Registersteptwo extends Component {
     }
 
     submit() {
-        this.props.setImage(this.state.value);
+        this.props.setImage(this.objectURL);
     }  
 
     onImageChange(event) {
         event.preventDefault();
         if (event.target.files && event.target.files[0]) {
             this.setState({ value: event.target.value });
+            this.objectURL = window.URL.createObjectURL(event.target.files[0])
         }
         
     }
@@ -50,7 +52,6 @@ class Registersteptwo extends Component {
     handleClick(e) {
         this.refs.fileUploader.click();
     }
-
 
     
     render(){
@@ -60,7 +61,7 @@ class Registersteptwo extends Component {
                 <h3 className="titleTopp"> Step Two </h3>
                 <h2 className="titleBottom"> PROFILE PICTURE </h2>
 
-                <img for="picID" className="registrationPictureImg" src={require('../registration.png')} alt="profile picture"  /> 
+                <img for="picID" className="registrationPictureImg" src={this.objectURL || require('../registration.png')} alt="profile picture"  /> 
                 <MuiThemeProvider> 
                 <FloatingActionButton className="Addbutton" onClick={this.handleClick}>
                         <ContentAdd/>
