@@ -56,8 +56,8 @@ class Registerstepone extends Component {
         return (    
             <div className="registrationStepOne">
 
-                <h3 className="titleTopp"> Step One </h3>
-                <h2 className="titleBottom"> THE BASICS </h2>
+                <div className="titleTopp"> Step One </div>
+                <div className="titleBottom"> THE BASICS </div>
 
                 <input className="userInput" onChange={this.onChangeInput} placeholder="Your name" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>
                 <input className="userInput" onChange={this.onEmailInput} placeholder="Email" type="text" defaultValue={this.props.email} ref="email"/>     <br/><br/><br/>

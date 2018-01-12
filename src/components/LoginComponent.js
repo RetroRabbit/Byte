@@ -63,7 +63,7 @@ class LoginComponent extends Component {
 
          <input className='otherfont' placeholder="Email"  type="text" id="username" onChange={this.onChangeInput}/>
          <br/><br/><br/>
-         <input  className='otherfont' placeholder="Password" type="pwd" id="pwd" onChange={this.onSubmitForm}/>
+         <input  className='otherfont' placeholder="Password" type="password" id="pwd" onChange={this.onSubmitForm}/>
          <br/><br/><br/>
            <div className='position'>
                    <div className='button' onClick={this.submit}><Link to="/mainChat">Login </Link></div>

@@ -36,8 +36,8 @@ class Registerstepthree extends Component {
         return (
             <div className="registrationStepThree">
 
-                <h3 className="titleTopp"> Last Step </h3>
-                <h2 className="titleBottom"> YOUR FIRST CHAT </h2>
+                <div className="titleTopp"> Last Step </div>
+                <div className="titleBottom"> YOUR FIRST CHAT </div>
                 <br/><br/><br/><br/>
                 <input className="userInput" onChange={this.onChangeInput} placeholder="Friends Email" type="text" defaultValue={this.props.name} ref="name" /> <br/><br/><br/>
                 <br/><br/><br/><br/>
@@ -48,7 +48,7 @@ class Registerstepthree extends Component {
                         </header>
                     </div>
 
-                <h6 className="skip"> <Link to="/mainChat"> SKIP FOR NOW </Link> </h6>
+                <div className="skip"> <Link to="/mainChat"> SKIP FOR NOW </Link> </div>
 
             </div>
         )

@@ -64,7 +64,7 @@ class Registersteptwo extends Component {
                 <img for="picID" className="registrationPictureImg" src={this.objectURL || require('../registration.png')} alt="profile picture" /> 
                 <div>
                 <MuiThemeProvider> 
-                <FloatingActionButton className="Addbutton" onClick={this.handleClick}>
+                <FloatingActionButton backgroundColor={{backgroundColor:"grey"}} className="AddButton" onClick={this.handleClick}>
                         <ContentAdd/>
                 </FloatingActionButton>
                  </MuiThemeProvider>  
@@ -77,7 +77,9 @@ class Registersteptwo extends Component {
                         <header>
                             <button onClick={ this.submit } className="registrationButtonStepOne"> <Link to="/stepthree">  NEXT STEP </Link>  </button>
                         </header>
-                    </div>
+                </div>
+                
+                <div className="skip"> <Link to="/stepthree"> SKIP FOR NOW </Link> </div>
 
             </div>
         )
