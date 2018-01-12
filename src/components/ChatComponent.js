@@ -9,9 +9,13 @@ import { connect } from 'react-redux'
 import { Route } from 'react-router-dom';
 import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
+import axios from "axios";
 import {
   getChat
 } from '../modules/chats'
+
+
+const baseUrl = 'http://localhost:52833';
 
 class ChatComponent extends Component {
   constructor(props) {
